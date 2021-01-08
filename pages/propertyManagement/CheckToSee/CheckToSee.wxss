@@ -1,0 +1,157 @@
+.fiedx.data-v-1ec2234e {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9
+}
+
+.topLine.data-v-1ec2234e {
+  height: 178rpx
+}
+
+.searchBox{
+  width: 750rpx;
+  height: 40rpx;
+  position: relative;
+  background: #F07535;
+  color: #fff;
+  font-size: 16px;
+  z-index: 9;
+
+}
+
+.allTxt {
+  top: -20rpx;
+  position: absolute;
+  right: 50rpx;
+ 
+}
+
+.xlshow.data-v-1ec2234e {
+  position: fixed;
+  width: 160rpx;
+  background: #fff;
+  top: 170rpx;
+  right: 30rpx;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  z-index: 9;
+  padding-bottom: 30rpx;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.itemLabel.data-v-1ec2234e {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20rpx
+}
+
+.back.data-v-1ec2234e {
+  width: 100%;
+  background: #f07535;
+  color: #fff
+}
+
+.searchBack.data-v-1ec2234e {
+  width: 494rpx;
+  height: 54rpx;
+  background: hsla(0, 0%, 80%, .35);
+  -webkit-border-radius: 27rpx;
+  border-radius: 27rpx;
+  margin-left: 30rpx
+}
+
+
+
+.pullDown.data-v-1ec2234e {
+  width: 20rpx;
+  height: 12rpx;
+  margin-left: 10rpx
+}
+
+.serachImg.data-v-1ec2234e {
+  width: 34rpx;
+  height: 34rpx;
+  margin-left: 20rpx
+}
+
+.ipt.data-v-1ec2234e {
+  margin-left: 20rpx;
+  width: 400rpx;
+  font-size: 14px
+}
+
+.uni-input-placeholder.data-v-1ec2234e {
+  font-size: 12px
+}
+
+.itemBox.data-v-1ec2234e {
+  margin-top: 30rpx;
+  width: 650rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  padding-bottom: 40rpx;
+  font-size: 14px;
+  color: #666;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.itemName.data-v-1ec2234e {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #ccc
+}
+
+.bomLine.data-v-1ec2234e {
+  font-size: 12px;
+  padding: 30rpx 0
+}
+
+.dv.data-v-1ec2234e {
+  color: #23d400
+}
+
+.nodv.data-v-1ec2234e {
+  color: #f07535
+}
+
+.lodimg.data-v-1ec2234e {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx
+}
+
+.lodbox.data-v-1ec2234e {
+  font-size: 24rpx
+}
+
+.showloding.data-v-1ec2234e {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-1ec2234e {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-1ec2234e {
+  width: 260rpx;
+  height: 200rpx;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  background: rgba(88, 88, 88, .8)
+}
+
+.nocheckin.data-v-1ec2234e {
+  margin-top: 100rpx;
+  font-size: 14px;
+  color: #666
+}

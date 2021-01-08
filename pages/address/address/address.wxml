@@ -1,0 +1,17 @@
+<view class=" pos-rel content data-v-9f890c90">
+  <subunit class="fled data-v-9f890c90 vue-ref" vue-id="635d9051-1" retur="{{false}}" titel="入住信息" image="{{aimg}}"
+    data-ref="xcoll" data-event-opts="{{[['^add',[['add']]]]}}" bind:add="__e" bind:__l="__l"></subunit>
+  <view hidden="{{!(flag%2!==0)}}" class="shows pos-abs fled data-v-9f890c90">
+    <image class="showimg data-v-9f890c90" src="https://oss.kuaitongkeji.com/static/img/app/address/ads.png" mode
+      data-event-opts="{{[['tap',[['getto',['$event']]]]]}}" bindtap="__e"></image>
+  </view>
+  <image class="img data-v-9f890c90" src="https://oss.kuaitongkeji.com/static/img/app/home/jx.png" mode></image>
+  <add-list vue-id="635d9051-2" locdata="{{locdata}}" isLoding="{{isLoding}}" text="{{text}}" hasMore="{{hasMore}}"
+    class="data-v-9f890c90" bind:__l="__l"></add-list>
+  <view hidden="{{!(showPullDownRefreshIcon==true)}}" class="show pos-abs flex al-center ju-center data-v-9f890c90">
+    <view class="showcentent flex al-center ju-between data-v-9f890c90">
+      <image class="lodimg data-v-9f890c90" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+      </image>刷新中
+    </view>
+  </view>
+</view>

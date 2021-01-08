@@ -1,0 +1,102 @@
+.fixed.data-v-8f8fffb6 {
+  width: 100%;
+  position: fixed;
+  z-index: 9
+}
+
+.empty.data-v-8f8fffb6 {
+  color: #fff;
+  font-size: 15px;
+position: absolute;
+right: 50rpx;
+top: -10rpx;
+}
+
+.emptyBox{
+  position: relative;
+  width: 750rpx;
+  height: 40rpx;
+  background: #F07535;
+}
+
+.topLine.data-v-8f8fffb6 {
+  height: 188rpx
+}
+
+.contenBox.data-v-8f8fffb6 {
+  width: 690rpx;
+  padding: 30rpx
+}
+
+.itemBox.data-v-8f8fffb6 {
+  width: 650;
+  padding: 30rpx 20rpx;
+  background: #fff;
+  margin-bottom: 30rpx;
+  font-size: 12px;
+  color: #666;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx
+}
+
+.itemTxt.data-v-8f8fffb6 {
+  width: 600rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
+}
+
+.lodimg.data-v-8f8fffb6 {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx
+}
+
+.lodbox.data-v-8f8fffb6 {
+  font-size: 24rpx
+}
+
+.showloding.data-v-8f8fffb6 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-8f8fffb6 {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-8f8fffb6 {
+  width: 260rpx;
+  height: 200rpx;
+  background: rgba(88, 88, 88, .8);
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx
+}
+
+.nomsg.data-v-8f8fffb6 {
+  margin-top: 100rpx;
+  color: #999
+}
+
+.circle.data-v-8f8fffb6 {
+  width: 16rpx;
+  height: 16rpx;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: red;
+  right: 20rpx
+}
+
+.itemTime.data-v-8f8fffb6 {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10rpx
+}

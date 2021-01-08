@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-field": "/uview-ui/components/u-field/u-field",
+    "u-select": "/uview-ui/components/u-select/u-select",
+    "subunit": "/components/sub-unit/subunit",
+    "enclosure": "/components/checkIn/enclosure/enclosure",
+    "remarks": "/components/checkIn/remarks/remarks",
+    "lb-picker": "/components/lb-picker/index"
+  }
+}

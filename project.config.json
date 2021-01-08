@@ -1,0 +1,181 @@
+{
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": false,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "compileType": "miniprogram",
+  "libVersion": "",
+  "appid": "wxc7e2e247d7594448",
+  "projectname": "快通信息",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/address/address/address",
+          "pathName": "pages/address/address/address",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/residence/checkIn/checkIn",
+          "pathName": "pages/residence/checkIn/checkIn",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/visitapplication/visit/visit",
+          "pathName": "pages/visitapplication/visit/visit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/user/realInformation/setPassword/setPassword",
+          "pathName": "pages/user/realInformation/setPassword/setPassword",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/communityForum/forumlists/forumlists",
+          "pathName": "pages/communityForum/forumlists/forumlists",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/userMessenger/applyingTo/applyingTo",
+          "pathName": "pages/userMessenger/applyingTo/applyingTo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/residence/checkIn/checkIn",
+          "pathName": "pages/residence/checkIn/checkIn",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/visitapplication/newDetalis/newDetalis",
+          "pathName": "pages/visitapplication/newDetalis/newDetalis",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/visitapplication/visit/visit",
+          "pathName": "pages/visitapplication/visit/visit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/userMessenger/applyingTo/applyingTo",
+          "pathName": "pages/userMessenger/applyingTo/applyingTo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/propertyManagement/CheckToSee/CheckToSee",
+          "pathName": "pages/propertyManagement/CheckToSee/CheckToSee",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/propertyManagement/postManagement/postManagement",
+          "pathName": "pages/propertyManagement/postManagement/postManagement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/user/userInform/userInform",
+          "pathName": "pages/user/userInform/userInform",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/visitapplication/newDetalis/newDetalis",
+          "pathName": "pages/visitapplication/newDetalis/newDetalis",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/user/register/register",
+          "pathName": "pages/user/register/register",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

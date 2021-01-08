@@ -1,0 +1,49 @@
+<view class="data-v-eab262e0">
+  <subunit class="fixed data-v-eab262e0" vue-id="820a2e0a-1" titel="详情" bind:__l="__l"></subunit>
+  <view class="topLine data-v-eab262e0"></view>
+  <view class="contenBox flex-d al-center pos-rel data-v-eab262e0">
+    <block wx:for="{{locdata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <view data-event-opts="{{[['tap',[['addItem',[index]]]]]}}"
+        class="itemBox flex al-center ju-between data-v-eab262e0" bindtap="__e">
+        <view class="data-v-eab262e0">{{''+item.label+''}}</view>
+        <view class="itemValue data-v-eab262e0">{{''+item.value+''}}</view>
+      </view>
+    </block>
+    <view hidden="{{!(jurShow==true)}}" class="iSjurisdiction pos-abs flex-d al-center  data-v-eab262e0">
+      <block wx:for="{{jurList}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+        <view data-event-opts="{{[['tap',[['seljur',['$0'],[[['jurList','id',item.id]]]]]]]}}"
+          class="juritem data-v-eab262e0" bindtap="__e">{{''+item.label+''}}</view>
+      </block>
+    </view>
+    <view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}"
+      class="deadline flex al-center ju-between pos-rel data-v-eab262e0" bindtap="__e">
+      <view class="data-v-eab262e0">有效期限</view>
+      <view class="itemValue data-v-eab262e0">{{''+time+''}}<image class="blckpdImg data-v-eab262e0"
+          src="https://oss.kuaitongkeji.com/static/img/app/address/blckpd.png" mode></image>
+      </view>
+      <view hidden="{{!(tiemShow)}}" class="timeShow pos-abs flex-d al-center data-v-eab262e0">
+        <block wx:for="{{timeList}}" wx:for-item="item" wx:for-index="__i1__" wx:key="id">
+          <view data-event-opts="{{[['tap',[['seltime',['$0'],[[['timeList','id',item.id]]]]]]]}}"
+            class="juritem data-v-eab262e0" bindtap="__e">{{''+item.label+''}}</view>
+        </block>
+      </view>
+    </view>
+    <u-picker vue-id="820a2e0a-2" mode="time" params="{{params}}" value="{{show}}"
+      data-event-opts="{{[['^confirm',[['ok']]],['^input',[['__set_model',['','show','$event',[]]]]]]}}"
+      bind:confirm="__e" bind:input="__e" class="data-v-eab262e0" bind:__l="__l"></u-picker>
+    <view class="remarkBox data-v-eab262e0">
+      <view class="data-v-eab262e0">备注</view>
+      <view class="remarkCen data-v-eab262e0"><textarea class="reArea data-v-eab262e0" value="{{value}}" 
+          data-event-opts="{{[['input',[['__set_model',['','value','$event',[]]]]]]}}" bindinput="__e"></textarea>
+      </view>
+    </view>
+    <view data-event-opts="{{[['tap',[['Submit',['$event']]]]]}}"
+      class="pos-rel m-t4 bot flex al-center ju-center data-v-eab262e0" bindtap="__e">
+      <image class="Submit data-v-eab262e0" src="https://oss.kuaitongkeji.com/static/img/app/login/ccuc.png" mode>
+      </image>
+      <view class="pos-abs subtext data-v-eab262e0">保存</view>
+    </view>
+    <view data-event-opts="{{[['tap',[['delMember',['$event']]]]]}}"
+      class="delBox flex al-center ju-center  data-v-eab262e0" bindtap="__e">删除</view>
+  </view>
+</view>

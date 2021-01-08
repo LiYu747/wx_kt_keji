@@ -1,0 +1,62 @@
+<view class="data-v-08c2726c">
+  <subunit vue-id="02437156-1" retur="{{false}}" titel="物业" class="data-v-08c2726c" bind:__l="__l"></subunit>
+  <view class="userSelection pos-abs data-v-08c2726c">
+    <image class="sjxlIcon data-v-08c2726c" src="https://oss.kuaitongkeji.com/static/img/app/home/sjxl.png" mode
+      data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e"></image>
+    <view hidden="{{!(isShowType==true)}}" class="typeBox flex-d al-center data-v-08c2726c">
+      <image class="xljxImg data-v-08c2726c" src="https://oss.kuaitongkeji.com/static/img/app/home/xljx.png" mode>
+      </image>
+      <view class="typeLine data-v-08c2726c"></view>
+      <block wx:for="{{userType}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['selecType',[item],[[['userType','id',item.id]]]]]]]}}"
+          class="fz-12 itemType flex ju-center al-center data-v-08c2726c" bindtap="__e">{{''+item.name+''}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="contenBox flex data-v-08c2726c">
+    <view data-event-opts="{{[['tap',[['goQuery',['$event']]]]]}}" class="userQuery pos-rel data-v-08c2726c"
+      bindtap="__e">
+      <image class="userBack pos-abs data-v-08c2726c"
+        src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/userBack.png" mode></image>
+      <view class="zidx data-v-08c2726c">用户查询</view>
+      <view class="userText data-v-08c2726c">查询用户信息</view>
+      <view class="data-v-08c2726c">
+        <image class="userlookImg data-v-08c2726c"
+          src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/userlook.png" mode></image>
+      </view>
+    </view>
+    <view class=" m-l2 data-v-08c2726c">
+      <view data-event-opts="{{[['tap',[['CheckTo',['$event']]]]]}}"
+        class="CheckToSee flex fz-12 pos-rel data-v-08c2726c" bindtap="__e">
+        <image class="checkBack pos-abs data-v-08c2726c"
+          src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/checkBack.png" mode></image>
+        <view class="data-v-08c2726c">
+          <image class="ChecklookImg data-v-08c2726c"
+            src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/Checklook.png" mode></image>
+        </view>
+        <view class="data-v-08c2726c">
+          <view class="checktex1 data-v-08c2726c">入住查看</view>
+          <view class="checktex2 data-v-08c2726c">用户入住申请查看及审核</view>
+        </view>
+      </view>
+      <view data-event-opts="{{[['tap',[['comeAndGo',['$event']]]]]}}"
+        class="recordOfAccess flex pos-rel data-v-08c2726c" bindtap="__e">
+        <image class="checkBack pos-abs data-v-08c2726c"
+          src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/accessBack.png" mode></image>
+        <view class="data-v-08c2726c">
+          <image class="contractImg data-v-08c2726c"
+            src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/contract.png" mode></image>
+        </view>
+        <view class="data-v-08c2726c">
+          <view class="checktex1 data-v-08c2726c">进出记录</view>
+          <view class="checktex2 data-v-08c2726c">用户入住申请查看及审核</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view data-event-opts="{{[['tap',[['PostManagement',['$event']]]]]}}" class=" flex ju-center data-v-08c2726c"
+    bindtap="__e">
+    <image class="postManagement data-v-08c2726c"
+      src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/postManagement.png" mode></image>
+  </view>
+</view>

@@ -1,0 +1,82 @@
+<view class="data-v-6736a295">
+  <subunit class="pos data-v-6736a295" vue-id="1286b972-1" titel="小区论坛" 
+    data-event-opts="{{[['^goback',[['goback']]]]}}" bind:goback="__e" bind:__l="__l"></subunit>
+  <view class="ged data-v-6736a295"></view>
+  <view class="woer  data-v-6736a295">
+    <view class="nav flex data-v-6736a295">
+      <image class="img data-v-6736a295" src="{{user.avatar}}" mode></image>
+      <view class="m-l2 text data-v-6736a295">
+        <view class="data-v-6736a295">{{user.nickname}}</view>
+        <view class="small data-v-6736a295">{{arr.created_at}}</view>
+      </view>
+    </view>
+    <view class="title data-v-6736a295">{{arr.title}}</view>
+    <view class=" flex ju-center data-v-6736a295">
+      <view class="content data-v-6736a295">{{arr.content}}</view>
+    </view>
+    <view class="flex al-center imgbx data-v-6736a295">
+      <block wx:for="{{arr.album}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+        <view data-event-opts="{{[['tap',[['look',[item],[[['arr.album','id',item.id]]]]]]]}}" bindtap="__e"
+          class="data-v-6736a295">
+          <image class="itemimg data-v-6736a295" src="{{item.url}}" mode></image>
+        </view>
+      </block>
+    </view>
+    <view class="layou data-v-6736a295">
+      <view class=" move pos-abs data-v-6736a295">
+        <image class="plimg data-v-6736a295" src="https://oss.kuaitongkeji.com/static/img/app/forum/pinlun.png" mode
+          data-event-opts="{{[['tap',[['open',['$event']]]]]}}" bindtap="__e"></image>
+      </view>
+    </view>
+  </view>
+  <block wx:if="{{comments.length>0}}">
+    <view class="data-v-6736a295">
+      <block wx:for="{{comments}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view class="line flex pos-rel data-v-6736a295">
+          <view class="flex-d al-center marg data-v-6736a295">
+            <block wx:if="{{item.own_user}}">
+              <image class="img data-v-6736a295" src="{{item.own_user.avatar}}" mode></image>
+            </block>
+            <block wx:if="{{item.own_user}}">
+              <view class="nickname  data-v-6736a295">{{item.own_user.nickname}}</view>
+            </block>
+          </view>
+          <view class="data-v-6736a295">
+            <view class="texbox data-v-6736a295">{{item.content}}</view>
+            <view class="postime m-t1 data-v-6736a295">{{item.created_at}}</view>
+          </view>
+        </view>
+      </block>
+      <view hidden="{{!(isLoding==true)}}" class="m-t2 flex ju-center al-center lodbox data-v-6736a295">
+        <image class="lodimg data-v-6736a295" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif"
+          mode></image>加载中...
+      </view>
+      <block wx:if="{{hasMore==false}}">
+        <view class="flex btom ju-center m-t3  fz-14 data-v-6736a295">{{text}}</view>
+      </block>
+    </view>
+  </block>
+  <block wx:if="{{comments.length==0&&isLoding==false}}">
+    <view class="nono flex al-center ju-center data-v-6736a295">还没有任何评论哦~</view>
+  </block>
+  <view hidden="{{!(flag===true)}}" class="btom data-v-6736a295"></view>
+  <view hidden="{{!(flag===true)}}" class="posbot flex al-center pos-rel data-v-6736a295"><textarea
+      class="ch flex al-center data-v-6736a295" autoHeight="true" placeholder="评论"
+      data-event-opts="{{[['input',[['__set_model',['','context','$event',[]]]]]]}}" value="{{context}}"
+      bindinput="__e"></textarea>
+    <view data-event-opts="{{[['tap',[['send',['$event']]]]]}}"
+      class="btn flex pos-abs al-center ju-center data-v-6736a295" bindtap="__e">发送</view>
+  </view>
+  <view data-event-opts="{{[['tap',[['off',['$event']]]]]}}" hidden="{{!(see==true)}}"
+    class="look flex al-center ju-center data-v-6736a295" bindtap="__e">
+    <image class="srcimg data-v-6736a295" src="{{src}}" mode></image>
+  </view>
+  <view hidden="{{!(isLoding==true&&comments.length==0)}}" class="showloding flex al-center ju-center data-v-6736a295">
+    <view class="loding flex-d al-center ju-center data-v-6736a295">
+      <view class="  data-v-6736a295">
+        <image class="loimg data-v-6736a295" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>加载中
+    </view>
+  </view>
+</view>

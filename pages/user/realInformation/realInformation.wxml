@@ -1,0 +1,32 @@
+<view class="data-v-677951a5">
+  <subunit class="fixed data-v-677951a5" vue-id="a1938e78-1" titel="实名信息" bind:__l="__l"></subunit>
+  <view class="topLine data-v-677951a5"></view>
+  <view class="flex-d al-center data-v-677951a5">
+    <view class="contenBox data-v-677951a5">
+      <block wx:for="{{locdata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['settingPsw',[index]]]]]}}"
+          class="flex al-center ju-between itemBox pos-rel data-v-677951a5" bindtap="__e">
+          <view class="data-v-677951a5">{{''+item.label+''}}</view>
+          <view class="data-v-677951a5"><input class="ipt data-v-677951a5" type="text" focus="{{item.focus}}"
+              disabled="{{item.disabled}}" placeholder="{{item.placeholder}}"
+              data-event-opts="{{[['input',[['Vmodel',[index,'$event',[]],[[['locdata','id',item.id]]]]]]]}}"
+              value="{{item.value}}" bindinput="__e" /></view>
+          <block wx:if="{{index==2}}">
+            <view class="pos-abs rigth data-v-677951a5">
+              <image class="reimg data-v-677951a5" src="https://oss.kuaitongkeji.com/static/img/app/address/retrue.png"
+                mode></image>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+    <view data-event-opts="{{[['tap',[['save',['$event']]]]]}}" class="flex al-center ju-center save data-v-677951a5"
+      bindtap="__e">
+      <image class="enimg data-v-677951a5" src="https://oss.kuaitongkeji.com/static/img/app/login/ccuc.png" mode>
+      </image>
+      <view class="pos-abs data-v-677951a5">保存</view>
+    </view>
+    <view data-event-opts="{{[['tap',[['logOut',['$event']]]]]}}" class="end flex al-center ju-center data-v-677951a5"
+      bindtap="__e">退出登录</view>
+  </view>
+</view>

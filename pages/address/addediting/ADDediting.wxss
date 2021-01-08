@@ -1,0 +1,133 @@
+.fixed.data-v-2538df72 {
+  position: fixed;
+  z-index: 9
+}
+
+.topLine.data-v-2538df72 {
+  height: 148rpx
+}
+
+.content.data-v-2538df72 {
+  margin-top: 40rpx;
+  width: 650rpx;
+  padding: 10rpx 20rpx;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  -webkit-box-shadow: 2rpx 2rpx 6rpx 1rpx #d9d9d9;
+  box-shadow: 2rpx 2rpx 6rpx 1rpx #d9d9d9
+}
+
+.fied.data-v-2538df72 {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  font-size: 30rpx;
+  color: #666
+}
+
+.fied.data-v-2538df72 .u-field {
+  width: 100%;
+  padding: 0
+}
+
+.line.data-v-2538df72 {
+  width: 100%;
+  height: 1px;
+  background: hsla(0, 0%, 74.9%, .5);
+  bottom: 0;
+  z-index: 9
+}
+
+.dv.data-v-2538df72 {
+  margin-bottom: 40rpx
+}
+
+.preimg.data-v-2538df72 {
+  width: 358rpx;
+  height: 68rpx
+}
+
+.pretext.data-v-2538df72 {
+  font-size: 30rpx;
+  color: #fff
+}
+
+.memberBox.data-v-2538df72 {
+  margin-top: 40rpx;
+  width: 650rpx;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  background: #fff;
+  -webkit-box-shadow: 2rpx 2rpx 6rpx 1rpx #d9d9d9;
+  box-shadow: 2rpx 2rpx 6rpx 1rpx #d9d9d9;
+  font-size: 15px;
+  color: #666;
+  padding-bottom: 30rpx
+}
+
+.memberTil.data-v-2538df72 {
+  height: 80rpx;
+  border-bottom: 1px solid #ccc
+}
+
+.pushtagimg.data-v-2538df72 {
+  width: 40rpx;
+  height: 40rpx
+}
+
+.itemBox.data-v-2538df72 {
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px
+}
+
+.reimg.data-v-2538df72 {
+  width: 18rpx;
+  height: 28rpx;
+  margin-right: 10rpx
+}
+
+.itemBtm.data-v-2538df72 {
+  border-bottom: none
+}
+
+.Submit.data-v-2538df72 {
+  width: 358rpx;
+  height: 68rpx
+}
+
+.subtext.data-v-2538df72 {
+  font-size: 30rpx;
+  color: #fff
+}
+
+.bot.data-v-2538df72 {
+  margin-bottom: 40rpx
+}
+
+.nomen.data-v-2538df72 {
+  margin-top: 30rpx;
+  font-size: 14px;
+  color: #999
+}
+
+.showloding.data-v-2538df72 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-2538df72 {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-2538df72 {
+  width: 260rpx;
+  height: 200rpx;
+  background: rgba(88, 88, 88, .8)
+}

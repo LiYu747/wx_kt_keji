@@ -1,0 +1,63 @@
+<view class="data-v-629add5b">
+  <subunit class="fixed data-v-629add5b" vue-id="8d6e79f2-1" titel="申请成为" bind:__l="__l"></subunit>
+
+  <view class="lineTop data-v-629add5b"></view>
+  <view class="flex-d al-center data-v-629add5b">
+    <view class="msgBox data-v-629add5b">
+      <view data-event-opts="{{[['tap',[['goRecord',['$event']]]]]}}" class="record data-v-629add5b" bindtap="__e">申请进度
+  </view>
+      <view class="msgTil data-v-629add5b">基本信息</view>
+      <view class="m-t2 data-v-629add5b">
+        <block wx:for="{{locdata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+          <view class="msgItem flex al-center ju-between data-v-629add5b">
+            <view class="itemLabel data-v-629add5b">{{''+item.label+''}}</view><input class="msgIpt data-v-629add5b"
+              type="text" placeholder="{{item.placeholder}}" disabled="{{item.disabled}}" value="{{item.value}}"
+              data-event-opts="{{[['input',[['Vmodel',[index,'$event',[]],[[['locdata','id',item.id]]]]]]]}}"
+              bindinput="__e" />
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="accessoryBox data-v-629add5b">
+      <view class="accTitle flex al-center data-v-629add5b">附件凭证<view class="annotation data-v-629add5b">（截图、拍照 不超过三张）
+        </view>
+      </view>
+      <view class="flex ju-center data-v-629add5b">
+        <view class="fileBox flex data-v-629add5b">
+          <block wx:for="{{image}}" wx:for-item="item" wx:for-index="__i1__" wx:key="id">
+            <view class="data-v-629add5b">
+              <image class="itenImg data-v-629add5b" src="{{item}}" mode></image>
+            </view>
+          </block>
+          <view data-event-opts="{{[['tap',[['pushBtn',['$event']]]]]}}"
+            class="pushBtn flex-d al-center ju-center data-v-629add5b" bindtap="__e">
+            <image class="pushimg data-v-629add5b" src="https://oss.kuaitongkeji.com/static/img/app/home/push.png" mode>
+            </image>
+            <view class="fz-12 data-v-629add5b">上传文件</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="remarkBox data-v-629add5b">
+      <view class="reTil data-v-629add5b">备注</view><textarea
+        data-event-opts="{{[['input',[['__set_model',['','remark','$event',[]]]]]]}}" class="reArea data-v-629add5b"
+        value="{{remark}}" bindinput="__e"></textarea>
+    </view>
+    <view data-event-opts="{{[['tap',[['submit',['$event']]]]]}}"
+      class="Submit mar-t  flex al-center ju-center data-v-629add5b" bindtap="__e">
+      <image class="Submit pos-abs data-v-629add5b" src="https://oss.kuaitongkeji.com/static/img/app/login/ccuc.png"
+        mode></image>
+      <view class="subText data-v-629add5b">提交</view>
+    </view>
+  </view>
+<view class="LineBtom"></view>
+
+  <view hidden="{{!(isLoding==true)}}" class="showloding flex al-center ju-center data-v-629add5b">
+    <view class="loding flex-d al-center ju-center data-v-629add5b">
+      <view class="  data-v-629add5b">
+        <image class="loimg data-v-629add5b" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>上传中
+    </view>
+  </view>
+</view>

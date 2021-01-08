@@ -1,0 +1,226 @@
+.fidex.data-v-78031eec {
+  position: fixed;
+  z-index: 9
+}
+
+.line.data-v-78031eec {
+  height: 148rpx
+}
+
+.color.data-v-78031eec {
+  color: #666
+}
+
+.img.data-v-78031eec {
+  width: 100%;
+  height: 156rpx
+}
+
+.nav.data-v-78031eec {
+  width: 689rpx;
+  padding: 30rpx 0;
+  -webkit-border-radius: 20rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  position: relative;
+  top: -125rpx;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.top.data-v-78031eec {
+  margin-top: 28rpx;
+  width: 328rpx;
+  height: 182rpx;
+  background: rgba(9, 9, 9, .1)
+}
+
+.back.data-v-78031eec {
+  margin-top: 28rpx;
+  background: #fff;
+  height: 182rpx
+}
+
+.itemimg.data-v-78031eec {
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 10rpx
+}
+
+.timg.data-v-78031eec {
+  width: 152rpx;
+  height: 131rpx
+}
+
+.btn.data-v-78031eec {
+  margin-top: 24rpx;
+  width: 326rpx;
+  height: 56rpx;
+  -webkit-border-radius: 28rpx;
+  border-radius: 28rpx;
+  background: #f07535;
+  color: #fff
+}
+
+.btnimg.data-v-78031eec {
+  width: 29rpx;
+  height: 29rpx;
+  margin-right: 20rpx
+}
+
+.titel.data-v-78031eec {
+  margin-top: -100rpx;
+  width: 649rpx;
+  height: 80rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  padding: 0 20rpx;
+  color: #666
+}
+
+.tex1.data-v-78031eec {
+  font-size: 28rpx
+}
+
+.ipt.data-v-78031eec {
+  font-size: 24rpx;
+  width: 550rpx
+}
+
+.content.data-v-78031eec {
+  margin-top: 30rpx;
+  width: 649rpx;
+  height: 250rpx;
+  padding: 20rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.are.data-v-78031eec {
+  margin-top: 8rpx;
+  margin-left: 10rpx;
+  height: 240rpx;
+  width: 550rpx;
+  font-size: 24rpx;
+  -webkit-align-content: center;
+  align-content: center
+}
+
+.matop.data-v-78031eec {
+  margin-top: 40rpx;
+  font-size: 30rpx
+}
+
+.Submit.data-v-78031eec {
+  width: 400rpx;
+  height: 70rpx
+}
+
+.showloding.data-v-78031eec {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-78031eec {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-78031eec {
+  width: 260rpx;
+  height: 200rpx;
+  background: rgba(88, 88, 88, .8)
+}
+
+.tagbox.data-v-78031eec {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  width: 649rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.pushtagimg.data-v-78031eec {
+  width: 40rpx;
+  height: 40rpx
+}
+
+.pushtagpos.data-v-78031eec {
+  right: 20rpx
+}
+
+.showbox.data-v-78031eec {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #666
+}
+
+.tagitem.data-v-78031eec {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 148rpx;
+  height: 70rpx;
+  font-size: 13px;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  background: #eee;
+  margin-left: 30rpx;
+  margin-top: 30rpx
+}
+
+.pitchon.data-v-78031eec {
+  background: #f07535;
+  color: #fff
+}
+
+.affirm.data-v-78031eec {
+  top: 10rpx;
+  right: 10rpx
+}
+
+.optbox.data-v-78031eec {
+  width: 480rpx;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+.choiceitem.data-v-78031eec {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  font-size: 24rpx;
+  width: 140rpx;
+  height: 40rpx
+}
+
+.boot.data-v-78031eec {
+  height: 150rpx
+}

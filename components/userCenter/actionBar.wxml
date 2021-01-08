@@ -1,0 +1,16 @@
+<view class="box data-v-240ca943">
+  <block wx:for="{{locdata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+    <view data-event-opts="{{[['tap',[['add',[item,index],[[['locdata','id',item.id]]]]]]]}}"
+      class="{{['item flex al-center data-v-240ca943',(index<3)?'dv':'',(index>3)?'top':'']}}" bindtap="__e">
+      <image class="itemimg data-v-240ca943" src="{{item.image}}" mode></image>
+      <view class="itemtext data-v-240ca943">{{''+item.titel+''}}</view>
+      <block wx:if="{{index==5}}">
+        <view class="data-v-240ca943">
+          <block wx:if="{{0<informmsg&&user}}">
+            <view class="munber flex al-center ju-center data-v-240ca943">{{''+informmsg+''}}</view>
+          </block>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

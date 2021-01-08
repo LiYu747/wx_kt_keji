@@ -1,0 +1,56 @@
+<view class="data-v-75f636d2">
+  <subclass vue-id="4413da4d-1" titel="车辆" class="data-v-75f636d2" bind:__l="__l"></subclass>
+  <view class="tabbar flex al-center ju-around data-v-75f636d2">
+    <block wx:for="{{till}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <view data-event-opts="{{[['tap',[['add',[index]]]]]}}"
+        class="{{['item flex al-center data-v-75f636d2',(index==idx)?'dv':'']}}" bindtap="__e">{{item}}</view>
+    </block>
+  </view>
+  <view class="simulation data-v-75f636d2">以下均为模拟数据</view>
+  <view class="flex-d top al-center data-v-75f636d2">
+    <block wx:for="{{getData}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+      <view class="flex itembox pos-rel data-v-75f636d2">
+        <image class="itemimg data-v-75f636d2" src="{{item.image}}" mode></image>
+        <view class="m-t2 m-l2 name data-v-75f636d2">{{item.name}}<view
+            class="score  flex al-center data-v-75f636d2">
+            <block wx:if="{{item.score}}">
+              <view class="flex al-center data-v-75f636d2">
+                <image class="wujiaoimg data-v-75f636d2"
+                  src="https://oss.kuaitongkeji.com/static/img/app/classification/Healthcare/wujiao.png" mode></image>
+                <view class="m-l1 data-v-75f636d2">{{item.score}}</view>
+              </view>
+            </block>
+            <block wx:else>
+              <view class="Monthly data-v-75f636d2">{{item.Monthly}}</view>
+            </block>
+            <view class="Price data-v-75f636d2">{{item.Price}}</view>
+            <view class="timer pos-abs data-v-75f636d2">7.8km</view>
+          </view>
+          <view class="details flex data-v-75f636d2">{{item.titel}}<view class="databox data-v-75f636d2">
+              {{item.address}}</view>
+          </view>
+          <view class="Monthly data-v-75f636d2">{{item.xxadd}}</view>
+          <block wx:if="{{item.label}}">
+            <view class="details m-t1 data-v-75f636d2">{{item.label}}</view>
+          </block>
+          <block wx:if="{{item.tag}}">
+            <view class="m-t1 flex al-center data-v-75f636d2">
+              <block wx:for="{{item.tag}}" wx:for-item="items" wx:for-index="__i1__" wx:key="id">
+                <view class="items data-v-75f636d2">
+                  <image class="tagimg data-v-75f636d2" src="{{items}}" mode></image>
+                </view>
+              </block>
+            </view>
+          </block>
+          <view class="m-t1 flex data-v-75f636d2">
+            <view class="Views pos-abs flex al-center data-v-75f636d2">{{item.Views}}<image
+                class="nextimg data-v-75f636d2"
+                src="https://oss.kuaitongkeji.com/static/img/app/classification/Healthcare/next.png" mode></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="line data-v-75f636d2"></view>
+</view>

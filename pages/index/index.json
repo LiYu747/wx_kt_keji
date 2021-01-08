@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
+    "classification": "/components/home/classification/classification",
+    "information": "/components/home/information/information",
+    "periphery": "/components/home/periphery/periphery",
+    "community-news": "/components/home/CommunityNews/CommunityNews"
+  }
+}

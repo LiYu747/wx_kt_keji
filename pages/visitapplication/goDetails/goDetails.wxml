@@ -1,0 +1,43 @@
+<view class="data-v-f977bf14">
+  <subunit class="fidex data-v-f977bf14" vue-id="0814f75c-1" titel="详情" retur="{{true}}"
+    data-event-opts="{{[['^goback',[['goback']]]]}}" bind:goback="__e" bind:__l="__l"></subunit>
+  <view class="topline data-v-f977bf14"></view>
+  <view class="cont data-v-f977bf14">
+    <view class="nav flex al-center data-v-f977bf14">
+      <image class="img data-v-f977bf14" src="https://oss.kuaitongkeji.com/static/img/app/visit/gnt.png" mode></image>
+      <view class="text data-v-f977bf14">{{''+username+''}}</view>
+    </view>
+    <block wx:for="{{locadata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <view class="flex al-center pos-rel ipt data-v-f977bf14">
+        <view class="data-v-f977bf14">{{''+item.titel+''}}</view>
+        <view class="pos-abs rig data-v-f977bf14">{{''+item.value+''}}</view>
+      </view>
+    </block>
+    <view class="line data-v-f977bf14"></view>
+    <block wx:if="{{val}}">
+      <view class="qrimg flex ju-center data-v-f977bf14">
+        <tki-qrcode vue-id="0814f75c-2" cid="qrcode1" val="{{val}}" size="{{size}}" unit="{{unit}}"
+          background="{{background}}" foreground="{{foreground}}" pdground="{{pdground}}" icon="{{icon}}"
+          iconSize="{{iconsize}}" lv="{{lv}}" showLoading="{{false}}" onval="{{onval}}" loadMake="{{loadMake}}"
+          usingComponents="{{true}}" data-ref="qrcode" class="data-v-f977bf14 vue-ref" bind:__l="__l"></tki-qrcode>
+      </view>
+    </block>
+    <block wx:if="{{redIMG}}">
+      <view class="data-v-f977bf14">
+        <view class="tex1 data-v-f977bf14">补充图片</view>
+        <view class="imgBox data-v-f977bf14">
+          <image class="redImg data-v-f977bf14" src="{{redIMG}}" mode></image>
+        </view>
+      </view>
+    </block>
+    <view class="tex1 data-v-f977bf14">备注</view>
+    <view class="frame data-v-f977bf14">
+      <view wx:if="{{remark}}">{{remark}}</view>
+    </view>
+    <view class="tex1 data-v-f977bf14">申请结果</view>
+    <view class="frame data-v-f977bf14">
+      <view wx:if="{{result}}"> {{''+result+''}}</view>
+     </view>
+    <view class="linet data-v-f977bf14"></view>
+  </view>
+</view>

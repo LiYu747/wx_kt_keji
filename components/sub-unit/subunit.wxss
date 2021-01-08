@@ -1,0 +1,32 @@
+.boxs.data-v-7ff58dde {
+  width: 750rpx;
+  height: 148rpx;
+  background: #f07535
+}
+
+.nav.data-v-7ff58dde {
+  top: 60rpx;
+  height: 88rpx;
+  font-size: 36rpx;
+  color: #fff
+}
+
+.setimg.data-v-7ff58dde {
+  width: 40rpx;
+  height: 40rpx
+}
+
+.location.data-v-7ff58dde {
+  left: 90rpx
+}
+
+.dv.data-v-7ff58dde {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+.reimg.data-v-7ff58dde {
+  width: 22rpx;
+  height: 41rpx;
+  left: 50rpx
+}

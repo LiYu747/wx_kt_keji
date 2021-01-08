@@ -1,0 +1,102 @@
+<view class="data-v-02bbc018">
+  <view class="fidex data-v-02bbc018">
+    <subunit vue-id="3129b70a-1" titel="添加用户" class="data-v-02bbc018" bind:__l="__l"></subunit>
+    <view class="searchBox data-v-02bbc018">
+      <block wx:for="{{locdata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view class="itemBox flex al-center data-v-02bbc018">
+          <view class="flex al-center data-v-02bbc018">
+            <view class="c-red data-v-02bbc018">*</view>
+            <view class="data-v-02bbc018">{{''+item.label+''}}</view>
+          </view>
+          <view class="m-l2 data-v-02bbc018"><input class="ipt data-v-02bbc018" type="{{item.type}}"
+              placeholder="{{item.placeholder}}"
+              data-event-opts="{{[['input',[['Vmodel',[index,'$event',[]],[[['locdata','id',item.id]]]]]]]}}"
+              value="{{item.value}}" bindinput="__e" /></view>
+        </view>
+      </block>
+      <view class="flex ju-center data-v-02bbc018">
+        <view data-event-opts="{{[['tap',[['search',['$event']]]]]}}"
+          class="searchBtn flex al-center ju-center m-t2 data-v-02bbc018" bindtap="__e">搜索</view>
+      </view>
+    </view>
+    <view class="resultTil al-center flex ju-center data-v-02bbc018">搜索结果</view>
+  </view>
+  <view class="topLine data-v-02bbc018"></view>
+  <view class="resultBox flex-d al-center data-v-02bbc018">
+    <block wx:if="{{result.username}}">
+      <view class="listsBox data-v-02bbc018">
+        <view class=" flex-d  ju-center data-v-02bbc018">
+          <view class=" resultItem flex al-center data-v-02bbc018">
+            <view class="data-v-02bbc018">姓名</view>
+            <view class="m-l2 data-v-02bbc018">{{''+result.username+''}}</view>
+          </view>
+          <view class="resultItem flex al-center data-v-02bbc018">
+            <view class="data-v-02bbc018">手机号码</view>
+            <view class="m-l2 data-v-02bbc018">{{''+result.tel+''}}</view>
+          </view>
+          <view class="resultItem flex al-center nobtm data-v-02bbc018">
+            <view class="data-v-02bbc018">身份证号</view>
+            <view class="m-l2 data-v-02bbc018">{{''+result.id_card_no+''}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <block wx:if="{{result.username}}">
+    <view class="showBox m-t3  flex al-center ju-center data-v-02bbc018">
+      <view class="showCentent data-v-02bbc018">
+        <view data-event-opts="{{[['tap',[['addYse',['$event']]]]]}}" class="flex al-center m-t1 data-v-02bbc018"
+          bindtap="__e">
+          <image hidden="{{!(isYse==true)}}" class="zrimg data-v-02bbc018"
+            src="https://oss.kuaitongkeji.com/static/img/app/address/yes.png" mode></image>
+          <image hidden="{{!(isYse==false)}}" class="zrimg data-v-02bbc018"
+            src="https://oss.kuaitongkeji.com/static/img/app/address/zro.png" mode></image>
+          <view class="m-l2 data-v-02bbc018">是否允许添加其他成员</view>
+        </view>
+        <view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" class="flex m-t3 al-center data-v-02bbc018"
+          bindtap="__e">
+          <image class="blckpdImg data-v-02bbc018" src="https://oss.kuaitongkeji.com/static/img/app/address/blckpd.png"
+            mode></image>
+          <view class="m-l2 data-v-02bbc018">有效期限</view>
+          <view class="m-l2 data-v-02bbc018">{{''+time+''}}</view>
+        </view>
+        <view hidden="{{!(timeshow==true)}}" class="timeBox pos-abs flex-d al-center data-v-02bbc018">
+          <block wx:for="{{timeList}}" wx:for-item="item" wx:for-index="__i1__" wx:key="id">
+            <view data-event-opts="{{[['tap',[['selTime',['$0'],[[['timeList','id',item.id]]]]]]]}}"
+              class="itemType data-v-02bbc018" bindtap="__e">{{''+item.label+''}}</view>
+          </block>
+        </view>
+        <u-picker vue-id="3129b70a-2" mode="time" params="{{params}}" value="{{show}}"
+          data-event-opts="{{[['^confirm',[['ok']]],['^input',[['__set_model',['','show','$event',[]]]]]]}}"
+          bind:confirm="__e" bind:input="__e" class="data-v-02bbc018" bind:__l="__l"></u-picker>
+        <view data-event-opts="{{[['tap',[['e1',['$event']]]]]}}" class="flex m-t3 al-center data-v-02bbc018"
+          bindtap="__e">
+          <image class="blckpdImg data-v-02bbc018" src="https://oss.kuaitongkeji.com/static/img/app/address/blckpd.png"
+            mode></image>
+          <view class="m-l2 data-v-02bbc018">选择用户类型</view>
+          <view class="m-l2 data-v-02bbc018">{{''+typeTet+''}}</view>
+        </view>
+        <view hidden="{{!(showType==true)}}" class="typeBox pos-abs flex-d al-center data-v-02bbc018">
+          <block wx:for="{{types}}" wx:for-item="item" wx:for-index="__i2__" wx:key="id">
+            <view data-event-opts="{{[['tap',[['selType',['$0'],[[['types','id',item.id]]]]]]]}}"
+              class="itemType data-v-02bbc018" bindtap="__e">{{''+item.label+''}}</view>
+          </block>
+        </view>
+        <view class="m-t3 flex data-v-02bbc018">
+          <view class="remarkTxt data-v-02bbc018">备注</view>
+          <view class="data-v-02bbc018"><textarea class="reArea data-v-02bbc018" maxlength="10" 
+              data-event-opts="{{[['input',[['__set_model',['','reValue','$event',[]]]]]]}}" value="{{reValue}}"
+              bindinput="__e"></textarea></view>
+        </view>
+        <view class="flex al-center ju-around m-t2 data-v-02bbc018">
+          <view data-event-opts="{{[['tap',[['affirm',['$event']]]]]}}"
+            class="btnr flex al-center ju-center data-v-02bbc018" bindtap="__e">
+            <image class="btnimg data-v-02bbc018" src="https://oss.kuaitongkeji.com/static/img/app/qrcode/2.png" mode>
+            </image>
+            <view class=" pos-abs data-v-02bbc018">确认</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

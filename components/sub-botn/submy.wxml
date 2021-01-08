@@ -1,0 +1,9 @@
+<view class="booy flex al-center ju-center data-v-118349f4">
+  <block wx:for="{{icondata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+    <view data-event-opts="{{[['tap',[['add',[item],[[['icondata','id',item.id]]]]]]]}}"
+      class=" flex-d al-center data-v-118349f4" bindtap="__e">
+      <image class="{{['oic1 data-v-118349f4',(index==1)?'oic2':'']}}" src="{{item.icon}}" mode></image>
+      <view class="{{['itemtext data-v-118349f4',(index==2)?'calor':'']}}">{{''+item.titel+''}}</view>
+    </view>
+  </block>
+</view>

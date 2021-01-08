@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-parse": "/uview-ui/components/u-parse/u-parse",
+    "subunit": "/components/sub-unit/subunit"
+  }
+}

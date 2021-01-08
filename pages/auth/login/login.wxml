@@ -1,0 +1,75 @@
+<view class="back data-v-f761a2ca">
+  <view class="nav pos-rel flex al-center ju-center data-v-f761a2ca">
+    <image class="img pos-abs data-v-f761a2ca" src="https://oss.kuaitongkeji.com/static/img/app/login/fanhui.png" mode
+      data-event-opts="{{[['tap',[['goback',['$event']]]]]}}" bindtap="__e"></image>
+    <view class="text data-v-f761a2ca"></view>
+  </view>
+  <view class="logo flex ju-center data-v-f761a2ca">
+    <image class="logoimg data-v-f761a2ca" src="https://oss.kuaitongkeji.com/static/img/app/login/logo.png" mode>
+    </image>
+  </view>
+  <view class="top flex-d al-center data-v-f761a2ca">
+    <u-form vue-id="09d99dd1-1" model="{{form}}" data-ref="uForm" class="data-v-f761a2ca vue-ref" bind:__l="__l"
+      vue-slots="{{['default']}}">
+      <u-form-item vue-id="{{('09d99dd1-2')+','+('09d99dd1-1')}}"  prop="phone" class="data-v-f761a2ca"
+        bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-f761a2ca">
+          <image class="iptimg pos-abs data-v-f761a2ca"
+            src="https://oss.kuaitongkeji.com/static/img/app/login/phone.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-f761a2ca" vue-id="{{('09d99dd1-3')+','+('09d99dd1-2')}}"
+            type="number" clearable="{{flag}}" placeholder="输入手机号" value="{{form.phone}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','phone','$event',[]],['form']]]]]}}" bind:__l="__l">
+          </u-input>
+        </view>
+      </u-form-item>
+      <u-form-item data-custom-hidden="{{!(iSlogin==false)}}" vue-id="{{('09d99dd1-4')+','+('09d99dd1-1')}}" 
+        prop="password" class="data-v-f761a2ca" bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-f761a2ca">
+          <image class="iptimg2 pos-abs data-v-f761a2ca"
+            src="https://oss.kuaitongkeji.com/static/img/app/login/security.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-f761a2ca" vue-id="{{('09d99dd1-5')+','+('09d99dd1-4')}}"
+            type="password" clearable="{{flag}}" placeholder="输入密码" value="{{form.password}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','password','$event',[]],['form']]]]]}}" bind:__l="__l">
+          </u-input>
+        </view>
+      </u-form-item>
+      <u-form-item data-custom-hidden="{{!(iSlogin==true)}}" vue-id="{{('09d99dd1-6')+','+('09d99dd1-1')}}" 
+        prop="Verification" class="data-v-f761a2ca" bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-f761a2ca">
+          <image class="iptimg2 pos-abs data-v-f761a2ca"
+            src="https://oss.kuaitongkeji.com/static/img/app/login/security.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-f761a2ca" vue-id="{{('09d99dd1-7')+','+('09d99dd1-6')}}"
+            type="number" clearable="{{flag}}" placeholder="输入验证码" value="{{form.Verification}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','Verification','$event',[]],['form']]]]]}}"
+            bind:__l="__l"></u-input>
+          <view data-ref="code" data-event-opts="{{[['tap',[['addver',['$event']]]]]}}"
+            class="{{['vcode pos-abs flex al-center ju-center data-v-f761a2ca vue-ref',(code===false)?'dv':'']}}"
+            bindtap="__e">
+            <view class="tetxs data-v-f761a2ca">{{''+text+''}}</view>
+          </view>
+        </view>
+      </u-form-item>
+      <u-toast vue-id="{{('09d99dd1-8')+','+('09d99dd1-1')}}" data-ref="uToast" class="data-v-f761a2ca vue-ref"
+        bind:__l="__l"></u-toast>
+    </u-form>
+  </view>
+  <view  class=" cutBox">
+   <view data-event-opts="{{[['tap',[['cut',['$event']]]]]}}" bindtap="__e" >
+    <view hidden="{{!(iSlogin==false)}}" class="passlogin flex m-t1 data-v-f761a2ca">验证码登录</view>
+    <view hidden="{{!(iSlogin==true)}}" class="passlogin flex m-t1 data-v-f761a2ca">密码登录</view>
+   </view>
+  </view>
+  <view class="flex-d al-center m-t4 data-v-f761a2ca">
+    <view data-event-opts="{{[['tap',[['Login',['$event']]]]]}}"
+      class="btn pos-rel flex ju-center al-center data-v-f761a2ca" bindtap="__e">
+      <image class="jbsimg data-v-f761a2ca" src="https://oss.kuaitongkeji.com/static/img/app/login/jbs.png" mode>
+      </image>
+      <view class="lgtext pos-abs data-v-f761a2ca">登录</view>
+    </view>
+    <view class="flex al-center retrieve data-v-f761a2ca">
+      <view data-event-opts="{{[['tap',[['find',['$event']]]]]}}" bindtap="__e" class="data-v-f761a2ca">找回密码</view>
+      <view class="line data-v-f761a2ca"></view>
+      <view data-event-opts="{{[['tap',[['register',['$event']]]]]}}" bindtap="__e" class="data-v-f761a2ca">注册账号</view>
+    </view>
+  </view>
+</view>

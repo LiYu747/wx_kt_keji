@@ -1,0 +1,8 @@
+<view class="flex-d al-center ovov">
+  <subunit class="pos " vue-id="91b7c912-1" retur="{{true}}" titel="详情" bind:__l="__l"></subunit>
+  <view class="line"></view>
+  <view class="titel">{{''+title+''}}</view>
+  <view class="desc">
+    <u-parse vue-id="91b7c912-2" html="{{content}}" bind:__l="__l"></u-parse>
+  </view>
+</view>

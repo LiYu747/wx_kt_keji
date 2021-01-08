@@ -1,0 +1,118 @@
+.fixed.data-v-eab262e0 {
+  position: fixed;
+  z-index: 9
+}
+
+.topLine.data-v-eab262e0 {
+  height: 148rpx
+}
+
+.contenBox.data-v-eab262e0 {
+  width: 690rpx;
+  padding: 30rpx
+}
+
+.itemBox.data-v-eab262e0 {
+  width: 100%;
+  height: 60rpx;
+  font-size: 14px;
+  color: #999
+}
+
+.deadline.data-v-eab262e0 {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid #bfbfbf;
+  font-size: 14px;
+  color: #999
+}
+
+.blckpdImg.data-v-eab262e0 {
+  width: 24rpx;
+  height: 16rpx;
+  margin-left: 10rpx
+}
+
+.remarkBox.data-v-eab262e0 {
+  width: 100%;
+  color: #666;
+  font-size: 14px
+}
+
+.remarkCen.data-v-eab262e0 {
+  margin-top: 20rpx;
+  width: 650rpx;
+  padding: 20rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx
+}
+
+.reArea.data-v-eab262e0 {
+  width: 100%;
+  height: 150rpx;
+  font-size: 12px
+}
+
+.itemValue.data-v-eab262e0 {
+  color: #666
+}
+
+.iSjurisdiction.data-v-eab262e0 {
+  top: 205rpx;
+  width: 120rpx;
+  background: red;
+  right: 30rpx;
+  background: #fff;
+  z-index: 9;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  padding-bottom: 30rpx;
+  color: #666;
+  font-size: 14px
+}
+
+.juritem.data-v-eab262e0 {
+  margin-top: 20rpx
+}
+
+.timeShow.data-v-eab262e0 {
+  top: 80rpx;
+  width: 120rpx;
+  background: red;
+  right: 0;
+  background: #fff;
+  z-index: 9;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  padding-bottom: 30rpx;
+  color: #666;
+  font-size: 14px
+}
+
+.Submit.data-v-eab262e0 {
+  width: 358rpx;
+  height: 68rpx
+}
+
+.subtext.data-v-eab262e0 {
+  font-size: 30rpx;
+  color: #fff
+}
+
+.delBox.data-v-eab262e0 {
+  margin-top: 50rpx;
+  width: 358rpx;
+  height: 68rpx;
+  -webkit-border-radius: 30rpx;
+  border-radius: 30rpx;
+  background: #fff;
+  color: red
+}

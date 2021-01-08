@@ -1,0 +1,13 @@
+<view>
+  <view class="boxs data-v-7ff58dde">
+  <view class="nav pos-rel flex ju-center al-center data-v-7ff58dde">
+    <block wx:if="{{retur===true}}">
+      <image class="reimg pos-abs data-v-7ff58dde"
+        src="https://oss.kuaitongkeji.com/static/img/app/login/1729908969cd5d7d911e096d6db3c70.png" mode
+        data-event-opts="{{[['tap',[['goback',['$event']]]]]}}" bindtap="__e"></image>
+    </block>{{''+titel+''}}<view data-ref="lll" class="pos-abs location data-v-7ff58dde vue-ref">
+      <image class="{{['setimg data-v-7ff58dde',(rotateTimes%2===0)?'dv':'']}}" src="{{image}}" mode
+        data-event-opts="{{[['tap',[['push',['$event']]]]]}}" bindtap="__e"></image>
+    </view>
+  </view>
+</view></view>

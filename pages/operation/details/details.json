@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-picker": "/uview-ui/components/u-picker/u-picker",
+    "subunit": "/components/sub-unit/subunit"
+  }
+}

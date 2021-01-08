@@ -1,0 +1,42 @@
+<view class="data-v-181b585c">
+  <subclass vue-id="0be8b127-1" titel="购物" class="data-v-181b585c" bind:__l="__l"></subclass>
+  <view class="tabbar flex al-center ju-around data-v-181b585c">
+    <block wx:for="{{till}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <view data-event-opts="{{[['tap',[['add',[index]]]]]}}"
+        class="{{['item flex al-center data-v-181b585c',(index==idx)?'dv':'']}}" bindtap="__e">{{item}}</view>
+    </block>
+  </view>
+  <view class="simulation data-v-181b585c">以下均为模拟数据</view>
+  <view class="flex-d top al-center data-v-181b585c">
+    <block wx:for="{{getData}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+      <view class="flex itembox pos-rel data-v-181b585c">
+        <image class="itemimg data-v-181b585c" src="{{item.image}}" mode></image>
+        <view class="m-t2 m-l2 name data-v-181b585c">{{item.name}}<view
+            class="score  flex al-center data-v-181b585c">
+            <view class="flex al-center data-v-181b585c">
+              <image class="wujiaoimg data-v-181b585c"
+                src="https://oss.kuaitongkeji.com/static/img/app/classification/Healthcare/wujiao.png" mode></image>
+              <view class="m-l1 data-v-181b585c">{{item.score}}</view>
+            </view>
+            <view class="Price data-v-181b585c">{{item.Price}}</view>
+            <view class="timer pos-abs data-v-181b585c">{{item.distance}}</view>
+          </view>
+          <view class="details flex data-v-181b585c">{{item.titel}}<view class="databox data-v-181b585c">
+              {{item.address}}</view>
+          </view>
+          <block wx:if="{{item.label}}">
+            <view class="details  data-v-181b585c">{{item.label}}</view>
+          </block>
+          <view class="details m-t1 data-v-181b585c">{{item.Crunchies}}</view>
+          <view class="m-t1 flex data-v-181b585c">
+            <view class="Views pos-abs flex al-center data-v-181b585c">{{item.Views}}<image
+                class="nextimg data-v-181b585c"
+                src="https://oss.kuaitongkeji.com/static/img/app/classification/Healthcare/next.png" mode></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="line data-v-181b585c"></view>
+</view>

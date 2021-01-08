@@ -1,0 +1,35 @@
+<view class="data-v-b3b6d5fe">
+  <subunit class="fixed data-v-b3b6d5fe" vue-id="73a440af-1" titel="帖子详情" bind:__l="__l"></subunit>
+  <view class="topLine data-v-b3b6d5fe"></view>
+  <view class="contentBox data-v-b3b6d5fe">
+    <view class="state flex al-center data-v-b3b6d5fe">
+      <image class="stateimg data-v-b3b6d5fe" src="https://oss.kuaitongkeji.com/static/img/app/visit/gnt.png" mode>
+      </image>
+      <view class="m-l2 data-v-b3b6d5fe">{{infomsg.verify_status_text}}</view>
+    </view>
+    <view class=" flex-d  m-t4 data-v-b3b6d5fe">
+      <view class="data-v-b3b6d5fe">
+        <image class="userAvatar data-v-b3b6d5fe" src="{{userInfo.avatar}}" mode></image>
+      </view>
+      <view class="userName data-v-b3b6d5fe">姓名：{{userInfo.nickname}}</view>
+      <view class="margin-t5 flex   data-v-b3b6d5fe">
+        <view class="titleTex data-v-b3b6d5fe">标题：</view>
+        <view class="fz-14 conBox data-v-b3b6d5fe">{{infomsg.title}}</view>
+      </view>
+      <view class="m-t4 flex data-v-b3b6d5fe">
+        <view class="titleTex data-v-b3b6d5fe">内容：</view>
+        <view class="fz-14 conBox data-v-b3b6d5fe">{{infomsg.content}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="flex al-center ju-around btn data-v-b3b6d5fe">
+    <view data-event-opts="{{[['tap',[['pass',['$event']]]]]}}" class="btnr flex al-center ju-center data-v-b3b6d5fe"
+      bindtap="__e">
+      <image class="btnimg data-v-b3b6d5fe" src="https://oss.kuaitongkeji.com/static/img/app/login/ccuc.png" mode>
+      </image>
+      <view class=" pos-abs data-v-b3b6d5fe">通过</view>
+    </view>
+    <view data-event-opts="{{[['tap',[['nopass',['$event']]]]]}}" class="btnl flex al-center ju-center data-v-b3b6d5fe"
+      bindtap="__e">不通过</view>
+  </view>
+</view>

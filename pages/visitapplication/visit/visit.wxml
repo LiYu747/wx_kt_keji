@@ -1,0 +1,67 @@
+<view class="flex-d al-center data-v-2519d14e">
+  <subunit class="posp fiexd data-v-2519d14e" vue-id="3094d8a0-1" titel="拜访申请" bind:__l="__l"></subunit>
+  <view class=" message data-v-2519d14e">
+    <view data-event-opts="{{[['tap',[['gorecord',['$event']]]]]}}" class=" location data-v-2519d14e"
+    bindtap="__e">申请记录</view>
+    <view class="text flex al-center data-v-2519d14e">基本信息</view>
+    <view class="data-v-2519d14e">
+      <block wx:for="{{record}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['itemlabel',[index]]]]]}}"
+          class="{{['item flex al-center pos-rel data-v-2519d14e',(index===record.length-1)?'dv':'']}}" bindtap="__e">
+          <u-field bind:input="__e" vue-id="{{'3094d8a0-2-'+index}}" label="{{item.label}}"
+            placeholder="{{item.placeholder}}" clearable="{{false}}" required="{{item.required}}" input-align="right"
+            disabled="{{item.disabled}}" label-width="170" value="{{item.value}}"
+            data-event-opts="{{[['^input',[['Vmodel',[index,'$event',[]],[[['record','id',item.id]]]]]]]}}"
+            class="data-v-2519d14e" bind:__l="__l"></u-field>
+          <block wx:if="{{index===record.length-1}}">
+            <view class="pos-abs righ data-v-2519d14e">
+              <image class="xiala data-v-2519d14e" src="https://oss.kuaitongkeji.com/static/img/app/home/xiala.png"
+                mode></image>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+    <u-select vue-id="3094d8a0-3" mode="mutil-column-auto" default-value="{{value}}" list="{{renderVillageLists}}"
+      value="{{show}}"
+      data-event-opts="{{[['^confirm',[['confirm']]],['^input',[['__set_model',['','show','$event',[]]]]]]}}"
+      bind:confirm="__e" bind:input="__e" class="data-v-2519d14e" bind:__l="__l"></u-select>
+  </view>
+  <view class="uploadFiles data-v-2519d14e">
+    <view class="uploadTil flex al-center data-v-2519d14e">上传图片<block wx:if="{{textShow==true}}">
+        <view class="fz-12 m-l1 c-red data-v-2519d14e">(*您可以上传外卖或者快递的图片给用户)</view>
+      </block>
+    </view>
+    <view class="filesBox flex data-v-2519d14e">
+      <block wx:if="{{images}}">
+        <view class="data-v-2519d14e">
+          <image class="itemImg data-v-2519d14e" src="{{images}}" mode></image>
+        </view>
+      </block>
+      <view data-event-opts="{{[['tap',[['succ',['$event']]]]]}}"
+        class="puls flex-d al-center ju-center data-v-2519d14e" bindtap="__e">
+        <image class="pushimg data-v-2519d14e" src="https://oss.kuaitongkeji.com/static/img/app/home/push.png" mode>
+        </image>添加
+      </view>
+    </view>
+  </view>
+  <view class="pos-rel reMessage data-v-2519d14e">
+    <view class="textTil flex al-center data-v-2519d14e">申请备注</view>
+    <view class="data-v-2519d14e"><textarea class="tar data-v-2519d14e" maxlength="1000"
+        data-event-opts="{{[['input',[['__set_model',['','text','$event',[]]]]]]}}" value="{{text}}"
+        bindinput="__e"></textarea></view>
+  </view>
+  <view data-event-opts="{{[['tap',[['Submit',['$event']]]]]}}"
+    class="pos-rel m-t4 bot flex al-center ju-center data-v-2519d14e" bindtap="__e">
+    <image class="Submit data-v-2519d14e" src="https://oss.kuaitongkeji.com/static/img/app/login/ccuc.png" mode></image>
+    <view class="pos-abs subtext data-v-2519d14e">提交</view>
+  </view>
+  <view hidden="{{!(isLoding==true)}}" class="showloding flex al-center ju-center data-v-2519d14e">
+    <view class="loding flex-d al-center ju-center data-v-2519d14e">
+      <view class="  data-v-2519d14e">
+        <image class="loimg data-v-2519d14e" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>上传中
+    </view>
+  </view>
+</view>

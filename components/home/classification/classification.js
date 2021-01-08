@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/home/classification/classification"],{"1d6b":function(t,n,a){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e=u(a("a6bb")),o=u(a("3a23"));function u(t){return t&&t.__esModule?t:{default:t}}var c={name:"",components:{},props:{},data:function(){return{lists:[]}},methods:{Calss:function(){var n=this;e.default.chart({data:{code:"home_quick_nav_2"},fail:function(n){t.showToast({title:"网络错误",icon:"none"})},success:function(t){200==t.statusCode&&200==t.data.code&&(n.lists=t.data.data.ads)}})},goclass:function(n){n.page?o.default.to({pageAlias:n.page,options:n.params}):n.web_url&&t.navigateTo({url:"/pages/web/index/index?url="+encodeURIComponent(n.web_url)})}},onShow:function(){},mounted:function(){this.Calss()},onLoad:function(){},filters:{},computed:{},watch:{},directives:{}};n.default=c}).call(this,a("543d")["default"])},"80df":function(t,n,a){},"8a25":function(t,n,a){"use strict";a.r(n);var e=a("c2b4"),o=a("f6bb");for(var u in o)"default"!==u&&function(t){a.d(n,t,(function(){return o[t]}))}(u);a("fe03");var c,i=a("f0c5"),s=Object(i["a"])(o["default"],e["b"],e["c"],!1,null,"e4adaf6c",null,!1,e["a"],c);n["default"]=s.exports},c2b4:function(t,n,a){"use strict";var e;a.d(n,"b",(function(){return o})),a.d(n,"c",(function(){return u})),a.d(n,"a",(function(){return e}));var o=function(){var t=this,n=t.$createElement;t._self._c},u=[]},f6bb:function(t,n,a){"use strict";a.r(n);var e=a("1d6b"),o=a.n(e);for(var u in e)"default"!==u&&function(t){a.d(n,t,(function(){return e[t]}))}(u);n["default"]=o.a},fe03:function(t,n,a){"use strict";var e=a("80df"),o=a.n(e);o.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/home/classification/classification-create-component',
+    {
+        'components/home/classification/classification-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("8a25"))
+        })
+    },
+    [['components/home/classification/classification-create-component']]
+]);

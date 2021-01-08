@@ -1,0 +1,251 @@
+.wrap {
+  padding: 40rpx
+}
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #f5f5f5
+}
+
+.logo {
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 200rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50rpx
+}
+
+.text-area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center
+}
+
+.title {
+  font-size: 36rpx;
+  color: #8f8f94
+}
+
+.nav {
+  width: 750rpx;
+  background: #f07535;
+  position: fixed;
+  z-index: 9
+}
+
+.img {
+  width: 33rpx;
+  height: 34rpx;
+  left: 168rpx
+}
+
+.ipt {
+  margin-top: 20rpx;
+  width: 750rpx;
+  height: 88rpx;
+}
+
+.input {
+  width: 394rpx;
+  height: 54rpx;
+  background: hsla(0, 0%, 100%, .3);
+  -webkit-border-radius: 27px;
+  border-radius: 27px;
+  padding-left: 75rpx;
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fff
+}
+.hoemTil{
+  margin-top: 60rpx;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  color: #fff;
+}
+.input-placeholder {
+  color: #fff
+}
+.topLine{
+  height: 180rpx;
+}
+.boxss {
+  width: 750rpx;
+  height: 156rpx;
+}
+
+.imgjx {
+  width: 100%;
+  height: 156rpx
+}
+
+.imglb {
+  width: 580rpx;
+  height: 304rpx
+}
+
+.pos {
+  margin-top: -120rpx;
+  width: 100%;
+  height: 304rpx;
+}
+
+.itemimg {
+  width: 100rpx;
+  height: 100rpx
+}
+
+.operation {
+  margin-top: 70rpx;
+  width: 650rpx;
+  height: 150rpx;
+  background: #fff;
+  -webkit-border-radius: 20rpx 20rpx 0 0;
+  border-radius: 20rpx 20rpx 0 0;
+  padding: 20rpx;
+  padding-top: 14rpx;
+  padding-bottom: 22rpx
+}
+
+.itemtext {
+  margin-top: 5rpx;
+  font-size: 30rpx;
+  color: #666
+}
+
+.rig {
+  right: 49rpx;
+  font-size: 30rpx;
+  color: #fff
+}
+
+.moive {
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background: #000
+}
+
+.showback {
+  width: 100%;
+  height: 100vh
+}
+
+.closeimg {
+  margin-top: 80rpx;
+  width: 60rpx;
+  height: 60rpx
+}
+
+uni-video {
+  width: 100%
+}
+
+.showloding {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding {
+  width: 260rpx;
+  height: 200rpx;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  background: rgba(88, 88, 88, .8)
+}
+
+.userSelection {
+  top: 20rpx;
+  left: 40rpx
+}
+
+.sjxlIcon {
+  width: 28rpx;
+  height: 16rpx;
+  margin-left: 28rpx
+}
+
+.xljxImg {
+  margin-top: 5rpx;
+  width: 140rpx;
+  height: 200rpx;
+  position: absolute;
+  z-index: -1
+}
+
+.typeLine {
+  height: 20rpx
+}
+
+.typeBox {
+  margin-top: 5rpx;
+  width: 140rpx;
+  height: 200rpx;
+  color: #666
+}
+
+.itemType {
+  margin-top: 10rpx;
+  width: 100%;
+  height: 40rpx;
+  border-bottom: 1px solid #e6e6e6
+}
+
+.informBox {
+  right: 50rpx
+}
+
+.infosImg {
+  width: 34rpx;
+  height: 34rpx
+}
+
+.munber {
+  width: 34rpx;
+  height: 34rpx;
+  background: red;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  z-index: 2;
+  margin-top: -12rpx;
+  margin-left: 16rpx
+}
+
+.munMore {
+  width: 50rpx;
+  height: 34rpx;
+  background: red;
+  -webkit-border-radius: 20rpx;
+  border-radius: 20rpx;
+  font-size: 12px;
+  color: #fff;
+  z-index: 2;
+  margin-top: -12rpx;
+  margin-left: 16rpx
+}

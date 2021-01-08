@@ -1,0 +1,137 @@
+.back.data-v-f761a2ca {
+  position: relative;
+  background-image: url(https://oss.kuaitongkeji.com/static/img/app/login/backg.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%
+}
+
+.nav.data-v-f761a2ca {
+  top: 67rpx
+}
+
+.img.data-v-f761a2ca {
+  width: 22rpx;
+  height: 41rpx;
+  left: 50rpx
+}
+
+.text.data-v-f761a2ca {
+  height: 40rpx
+}
+
+.logo.data-v-f761a2ca {
+  margin-top: 200rpx;
+  width: 100%
+}
+
+.logoimg.data-v-f761a2ca {
+  width: 128rpx;
+  height: 169rpx
+}
+
+.uiput.data-v-f761a2ca {
+  width: 432rpx;
+  height: 68rpx;
+  background: hsla(0, 0%, 100%, .7);
+  -webkit-border-radius: 34rpx;
+  border-radius: 34rpx;
+  padding: 0 72rpx
+}
+
+.u-input__input.data-v-a2ae0614 {
+  color: #ff773c !important;
+  font-size: 12px;
+  width: 430rpx
+}
+
+.u-icon__icon{
+  /* background: red; */
+  font-size: 20px !important;
+}
+
+.input-placeholder {
+  color: #ff773c !important;
+  font-size: 12px
+}
+
+.top.data-v-f761a2ca {
+  margin-top: 75rpx
+}
+
+.iptimg.data-v-f761a2ca {
+  width: 30rpx;
+  height: 30rpx;
+  left: 37rpx
+}
+
+.iptimg2.data-v-f761a2ca {
+  width: 30rpx;
+  height: 30rpx;
+  left: 37rpx
+}
+
+.vcode.data-v-f761a2ca {
+  padding: 0 10rpx;
+  height: 40rpx;
+  -webkit-border-radius: 22rpx;
+  border-radius: 22rpx;
+  border: 1rpx solid #ff773c;
+  right: 27rpx;
+  color: #ff773c;
+  z-index:9
+}
+
+.tetxs.data-v-f761a2ca {
+  font-size: 24rpx;
+  -webkit-transform: scale(.9);
+  -webkit-transform-origin: left top 2
+}
+
+.dv.data-v-f761a2ca {
+  background: #ff934e;
+  border: none;
+  color: #fff;
+  -webkit-transform: scale(.9);
+  -webkit-transform-origin: left top 2
+}
+
+.btn.data-v-f761a2ca {
+  margin-top: 20rpx;
+  width: 576rpx;
+  height: 68rpx
+}
+
+.jbsimg.data-v-f761a2ca {
+  width: 576rpx;
+  height: 68rpx;
+  -webkit-border-radius: 34rpx;
+  border-radius: 34rpx
+}
+
+.lgtext.data-v-f761a2ca {
+  font-size: 30rpx;
+  color: #fff
+}
+
+.line.data-v-f761a2ca {
+  width: 1rpx;
+  height: 26rpx;
+  background: #ff773c;
+  margin: 0 28rpx
+}
+
+.retrieve.data-v-f761a2ca {
+  color: #ff773c;
+  font-size: 12px;
+  margin-top: 57rpx
+}
+.cutBox{
+  width: 650rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.passlogin.data-v-f761a2ca {
+  font-size: 12px;
+  color: #f07535;
+}

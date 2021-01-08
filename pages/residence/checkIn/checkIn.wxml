@@ -1,0 +1,51 @@
+<view class="flex-d al-center data-v-ea1837e8">
+  <subunit class="posp data-v-ea1837e8" vue-id="0c44a3cd-1" retur="{{true}}" titel="申请入住"
+    data-event-opts="{{[['^goback',[['goback']]]]}}" bind:goback="__e" bind:__l="__l"></subunit>
+  <view class=" message data-v-ea1837e8">
+    <view data-event-opts="{{[['tap',[['Application',['$event']]]]]}}" class=" move data-v-ea1837e8"
+    bindtap="__e">申请记录</view>
+    <view class="text flex al-center data-v-ea1837e8">基本信息</view>
+    <view class="data-v-ea1837e8">
+      <block wx:for="{{record}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['Onshow',[index]]]]]}}"
+          class="{{['item flex al-center pos-rel data-v-ea1837e8',(index===record.length-1)?'dv':'']}}" bindtap="__e">
+          <u-field bind:input="__e" vue-id="{{'0c44a3cd-2-'+index}}" placeholder="{{item.placeholder}}"
+            label="{{item.label}}" clearable="{{false}}" required="{{item.required}}" input-align="right"
+            disabled="{{item.disabled}}" value="{{item.value}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','value','$event',[]],[[['record','id',item.id]]]]]]]}}"
+            class="data-v-ea1837e8" bind:__l="__l"></u-field>
+          <block wx:if="{{index===record.length-2}}">
+            <view class="pos-abs righ data-v-ea1837e8">
+              <image class="xiala data-v-ea1837e8" src="https://oss.kuaitongkeji.com/static/img/app/home/xiala.png"
+                mode></image>
+              <view hidden="{{!(iSidentity==true)}}" class="content data-v-ea1837e8">
+                <block wx:for="{{options}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+                  <view data-event-opts="{{[['tap',[['selectOne',[item],[[['options','id',item.id]]]]]]]}}"
+                    class="itemBox data-v-ea1837e8" bindtap="__e">{{''+item.label+''}}</view>
+                </block>
+              </view>
+            </view>
+          </block>
+          <block wx:if="{{index===record.length-1}}">
+            <view class="pos-abs righ data-v-ea1837e8">
+              <image class="xiala data-v-ea1837e8" src="https://oss.kuaitongkeji.com/static/img/app/home/xiala.png"
+                mode></image>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+    <u-select vue-id="0c44a3cd-3" mode="mutil-column-auto" default-value="{{value}}" list="{{renderVillageLists}}"
+      value="{{show}}"
+      data-event-opts="{{[['^confirm',[['confirm']]],['^input',[['__set_model',['','show','$event',[]]]]]]}}"
+      bind:confirm="__e" bind:input="__e" class="data-v-ea1837e8" bind:__l="__l"></u-select>
+  </view>
+  <enclosure bind:abb="__e" vue-id="0c44a3cd-4" data-ref="encl" data-event-opts="{{[['^abb',[['add']]]]}}"
+    class="data-v-ea1837e8 vue-ref" bind:__l="__l"></enclosure>
+  <remarks vue-id="0c44a3cd-5" data-ref="marks" class="data-v-ea1837e8 vue-ref" bind:__l="__l"></remarks>
+  <view data-event-opts="{{[['tap',[['Submit',['$event']]]]]}}"
+    class="pos-rel m-t4 bot flex al-center ju-center data-v-ea1837e8" bindtap="__e">
+    <image class="Submit data-v-ea1837e8" src="https://oss.kuaitongkeji.com/static/img/app/login/ccuc.png" mode></image>
+    <view class="pos-abs subtext data-v-ea1837e8">提交</view>
+  </view>
+</view>

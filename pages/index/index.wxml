@@ -1,0 +1,80 @@
+<view class="content">
+  <view class="nav ">
+    <view class="hoemTil">首页</view>
+    <view class="ipt  ju-center flex al-center pos-rel">
+      <block wx:if="{{user}}">
+        <view class="userSelection pos-abs">
+          <image class="sjxlIcon" src="https://oss.kuaitongkeji.com/static/img/app/home/sjxl.png" mode
+            data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e"></image>
+          <view hidden="{{!(isShowType==true)}}" class="typeBox flex-d al-center">
+            <image class="xljxImg" src="https://oss.kuaitongkeji.com/static/img/app/home/xljx.png" mode></image>
+            <view class="typeLine"></view>
+            <block wx:for="{{userType}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+              <view data-event-opts="{{[['tap',[['selecType',[item],[[['userType','id',item.id]]]]]]]}}"
+                class="fz-12 itemType flex ju-center al-center" bindtap="__e">{{''+item.name+''}}</view>
+            </block>
+          </view>
+        </view>
+      </block>
+      <image class="img pos-abs" src="https://oss.kuaitongkeji.com/static/img/app/home/ss.png" mode></image><input
+        class="input" type="text" confirm-type="search" placeholder="请输入小区名称关键词"
+        data-event-opts="{{[['confirm',[['confirm',['$event']]]],['input',[['__set_model',['','value','$event',[]]]]]]}}"
+        value="{{value}}" bindconfirm="__e" bindinput="__e" />
+      <block wx:if="{{user}}">
+        <view data-event-opts="{{[['tap',[['goInform',['$event']]]]]}}" class="informBox pos-abs" bindtap="__e">
+          <block wx:if="{{0<informmsg.total_unread&&informmsg.total_unread<100}}">
+            <view class="munber flex al-center ju-center pos-abs">
+              <view>{{''+informmsg.total_unread+''}}</view>
+            </view>
+          </block>
+          <block wx:if="{{informmsg.total_unread>99}}">
+            <view class="munMore  flex al-center ju-center pos-abs">99+</view>
+          </block>
+          <image class="infosImg" src="https://oss.kuaitongkeji.com/static/img/app/home/infos.png" mode></image>
+        </view>
+      </block>
+    </view>
+  </view>
+ <view class="topLine"></view> 
+  <view class="flex-d al-center">
+    <view class="boxss">
+      <image class="imgjx" src="https://oss.kuaitongkeji.com/static/img/app/home/jx.png" mode></image>
+    </view>
+    <view class=" pos">
+      <u-swiper vue-id="8dd740cc-1" list="{{list}}" border-radius="20" bg-color="rgba(255, 255, 255, 0)" height="340"
+        effect3d-previous-margin="60" indicator-pos="none" effect3d="{{true}}"
+        data-event-opts="{{[['^click',[['addswiper']]]]}}" bind:click="__e" bind:__l="__l"></u-swiper>
+    </view>
+    <view class="flex operation ju-between">
+      <block wx:for="{{localdata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['operation',['$0'],[[['localdata','id',item.id]]]]]]]}}"
+          class="flex-d al-center" bindtap="__e">
+          <image class="itemimg" src="{{item.image}}" mode></image>
+          <view class="itemtext">{{''+item.name+''}}</view>
+        </view>
+      </block>
+    </view>
+    <classification class="vue-ref" vue-id="8dd740cc-2" data-ref="clas" bind:__l="__l"></classification>
+    <information class="vue-ref" vue-id="8dd740cc-3" data-ref="infor" bind:__l="__l"></information>
+    <block wx:if="{{user}}">
+      <community-news class="vue-ref" vue-id="8dd740cc-4" data-ref="news" bind:__l="__l"></community-news>
+    </block>
+    <periphery class="vue-ref" vue-id="8dd740cc-5" data-ref="peri" bind:__l="__l"></periphery>
+  </view>
+  <block wx:if="{{paly==true}}">
+    <view data-event-opts="{{[['mousewheel',[['',['$event']]]]]}}" class=" pos-abs moive flex-d al-center ju-center"
+      bindmousewheel="__e">
+      <view data-event-opts="{{[['tap',[['close',['$event']]]]]}}" class="showback pos-abs" bindtap="__e"></view><video
+        src="{{videoUrl}}" poster="{{cover}}"></video>
+      <image class="closeimg" src="https://oss.kuaitongkeji.com/static/img/app/home/close.png" mode
+        data-event-opts="{{[['tap',[['close',['$event']]]]]}}" bindtap="__e"></image>
+    </view>
+  </block>
+  <view hidden="{{!(showPullDownRefreshIcon==true)}}" class="showloding flex al-center ju-center">
+    <view class="loding flex-d al-center ju-center">
+      <view class=" ">
+        <image class="loimg" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode></image>
+      </view>刷新中
+    </view>
+  </view>
+</view>

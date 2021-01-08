@@ -1,0 +1,26 @@
+<view class="_div data-v-66905ab0">
+  <view class="box data-v-66905ab0">
+    <view class="flex al-center  m-b1 pos-rel data-v-66905ab0">
+      <image class="imgss data-v-66905ab0" src="https://oss.kuaitongkeji.com/static/img/app/home/zx@2x.png" mode>
+      </image>
+      <view class="text data-v-66905ab0">周边消息</view>
+      <view data-event-opts="{{[['tap',[['lookmore',['$event']]]]]}}" class="andMore pos-abs data-v-66905ab0"
+        bindtap="__e">查看更多</view>
+    </view>
+    <block wx:if="{{locdata.length>0}}">
+      <view class="conten flex ju-between flex-w data-v-66905ab0">
+        <block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+          <view data-event-opts="{{[['tap',[['godils',['$0'],[[['locdata','',index]]]]]]]}}"
+            class="item flex pos-rel data-v-66905ab0" bindtap="__e">
+            <image class="itemimg data-v-66905ab0" src="{{item.$orig.faceimg}}" mode></image>
+            <view class="font fz-12 data-v-66905ab0">{{''+item.$orig.title+''}}</view>
+            <view class="time  pos-abs location  data-v-66905ab0">{{''+item.g0+''}}</view>
+          </view>
+        </block>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="nomsg data-v-66905ab0">还没有任何周边资讯哦~</view>
+    </block>
+  </view>
+</view>

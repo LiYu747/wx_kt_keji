@@ -1,0 +1,51 @@
+<view class="data-v-3da44561">
+  <subclass vue-id="5f34f9e7-1" titel="旅行" class="data-v-3da44561" bind:__l="__l"></subclass>
+  <view class="tabbar flex al-center ju-around data-v-3da44561">
+    <block wx:for="{{till}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <view data-event-opts="{{[['tap',[['add',[index]]]]]}}"
+        class="{{['item flex al-center data-v-3da44561',(index==idx)?'dv':'']}}" bindtap="__e">{{item}}</view>
+    </block>
+  </view>
+  <view class="simulation data-v-3da44561">以下均为模拟数据</view>
+  <view class="flex-d top al-center data-v-3da44561">
+    <block wx:for="{{getData}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+      <view class="flex itembox pos-rel data-v-3da44561">
+        <image class="itemimg data-v-3da44561" src="{{item.image}}" mode></image>
+        <view class="m-t2 m-l2 name data-v-3da44561">{{item.name}}<view
+            class="score  flex al-center data-v-3da44561">
+            <view class="flex al-center data-v-3da44561">
+              <image class="wujiaoimg data-v-3da44561"
+                src="https://oss.kuaitongkeji.com/static/img/app/classification/Healthcare/wujiao.png" mode></image>
+              <view class="m-l1 data-v-3da44561">{{item.score}}</view>
+            </view>
+            <view class="Price data-v-3da44561">{{item.Price}}</view>
+            <view class="timer pos-abs data-v-3da44561">{{item.distance}}</view>
+          </view>
+          <view class="details flex data-v-3da44561">{{item.titel}}<view class="databox data-v-3da44561">
+              {{item.address}}</view>
+          </view>
+          <block wx:if="{{item.label}}">
+            <view class="details  data-v-3da44561">{{item.label}}</view>
+          </block>
+          <block wx:if="{{item.price}}">
+            <view class="m-t1 details flex al-center data-v-3da44561">门票<view class="price data-v-3da44561">
+                {{item.price}}</view>起</view>
+          </block>
+          <block wx:else>
+            <view class="m-t1 details flex al-center data-v-3da44561">免费开放</view>
+          </block>
+          <view class="interval  data-v-3da44561"></view>
+          <view class="details data-v-3da44561">{{item.Crunchies}}</view>
+          <view class="details data-v-3da44561">{{item.introduce}}</view>
+          <view class="m-t1 flex data-v-3da44561">
+            <view class="Views pos-abs flex al-center data-v-3da44561">{{item.Views}}<image
+                class="nextimg data-v-3da44561"
+                src="https://oss.kuaitongkeji.com/static/img/app/classification/Healthcare/next.png" mode></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="line data-v-3da44561"></view>
+</view>

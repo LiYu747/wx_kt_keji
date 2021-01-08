@@ -1,0 +1,45 @@
+<view class="data-v-8f8fffb6">
+  <view class="fixed  data-v-8f8fffb6">
+    <subunit vue-id="6af0dbbc-1" titel="消息" class="data-v-8f8fffb6" bind:__l="__l"></subunit>
+   <view class="emptyBox">
+    <view data-event-opts="{{[['tap',[['ReadAll',['$event']]]]]}}" class="  empty data-v-8f8fffb6" bindtap="__e">
+      全部已读</view>
+   </view>
+  </view>
+  <view class="topLine data-v-8f8fffb6"></view>
+  <block wx:if="{{infoLists.length>0}}">
+    <view class="contenBox data-v-8f8fffb6">
+      <block wx:for="{{infoLists}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view class="flex-d al-center data-v-8f8fffb6">
+          <view class="itemTime data-v-8f8fffb6">{{''+item.created_at+''}}</view>
+          <view data-event-opts="{{[['tap',[['goDetails',['$0'],[[['infoLists','id',item.id]]]]]]]}}"
+            class="itemBox flex al-center pos-rel data-v-8f8fffb6" bindtap="__e">
+            <view class="itemTxt data-v-8f8fffb6">{{''+item.title+''}}</view>
+            <block wx:if="{{item.read_at==null}}">
+              <view class="circle pos-abs data-v-8f8fffb6"></view>
+            </block>
+          </view>
+        </view>
+      </block>
+      <view hidden="{{!(isLoding==true&&infoLists.length>0)}}" class=" flex ju-center al-center lodbox data-v-8f8fffb6">
+        <image class="lodimg data-v-8f8fffb6" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif"
+          mode></image>加载中...
+      </view>
+      <block wx:if="{{hasMore==false}}">
+        <view class="flex ju-center m-b2 fz-14 data-v-8f8fffb6">{{''+text+''}}</view>
+      </block>
+    </view>
+  </block>
+  <block wx:if="{{infoLists.length==0&&isLoding==false}}">
+    <view class="flex ju-center fz-14 nomsg data-v-8f8fffb6">暂无消息通知</view>
+  </block>
+  <view hidden="{{!(isLoding==true&&infoLists.length==0)}}" class="showloding flex al-center ju-center data-v-8f8fffb6">
+    <view class="loding flex-d al-center ju-center data-v-8f8fffb6">
+      <view class="  data-v-8f8fffb6">
+        <image class="loimg data-v-8f8fffb6" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>加载中
+    </view>
+  </view>
+ 
+</view>

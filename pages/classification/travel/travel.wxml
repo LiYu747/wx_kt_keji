@@ -1,0 +1,34 @@
+<view class="data-v-11715bf7">
+  <subclass vue-id="6d610ba7-1" titel="交通出行" showmap="{{false}}" class="data-v-11715bf7" bind:__l="__l"></subclass>
+  <!-- <view class="topbox flex al-center ju-center data-v-11715bf7">
+    <view class="inbox flex data-v-11715bf7">
+      <view class="left flex-d al-center pos-rel data-v-11715bf7">
+        <view class="come data-v-11715bf7">从</view>
+        <view class="go pos-abs data-v-11715bf7">到</view>
+      </view>
+      <view class="rigth data-v-11715bf7"><input placeholder="{{myholder}}"
+          data-event-opts="{{[['input',[['__set_model',['','myPosition','$event',[]]]]]]}}" value="{{myPosition}}"
+          bindinput="__e" class="data-v-11715bf7" />
+        <view class="line data-v-11715bf7"><input placeholder="{{goholder}}"
+            data-event-opts="{{[['input',[['__set_model',['','goPosition','$event',[]]]]]]}}" value="{{goPosition}}"
+            bindinput="__e" class="data-v-11715bf7" /></view>
+      </view>
+      <view class="data-v-11715bf7">
+        <image class="jiaoimg data-v-11715bf7"
+          src="https://oss.kuaitongkeji.com/static/img/app/classification/Travel/jiah.png" mode
+          data-event-opts="{{[['tap',[['swap',['$event']]]]]}}" bindtap="__e"></image>
+      </view>
+    </view> -->
+  <!-- </view> -->
+  <map style="width:100%;height:1000rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}"
+    class="data-v-11715bf7"></map>
+  <view class=" flex ju-center data-v-11715bf7">
+    <view class="botombox flex al-center ju-center data-v-11715bf7">
+      <view class="flex ju-center  data-v-11715bf7">
+        <image class="startimg data-v-11715bf7"
+          src="https://oss.kuaitongkeji.com/static/img/app/classification/Travel/start.png" mode
+          data-event-opts="{{[['tap',[['start',['$event']]]]]}}" bindtap="__e"></image>
+      </view>
+    </view>
+  </view>
+</view>

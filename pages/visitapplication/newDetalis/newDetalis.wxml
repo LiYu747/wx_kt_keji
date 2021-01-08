@@ -1,0 +1,62 @@
+<view class="data-v-91467866">
+  <subunit class="fidex data-v-91467866" vue-id="6e0ad088-1" titel="最新拜访信息" retur="{{true}}"
+    data-event-opts="{{[['^goback',[['goback']]]]}}" bind:goback="__e" bind:__l="__l"></subunit>
+    <view class="topline data-v-91467866"></view>
+    <view class="pushBox">
+      <view data-event-opts="{{[['tap',[['addTo',['$event']]]]]}}" class=" move data-v-91467866" bindtap="__e">添加申请
+    </view>
+    </view>
+    <view class="pushLine"></view>
+  <block wx:if="{{getmsg.info}}">
+    <view class="cont data-v-91467866">
+      <view class="nav flex al-center data-v-91467866">
+        <image class="img data-v-91467866" src="https://oss.kuaitongkeji.com/static/img/app/visit/gnt.png" mode></image>
+        <view class="text data-v-91467866">{{username}}</view>
+      </view>
+      <block wx:for="{{locadata}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view class="flex al-center pos-rel ipt data-v-91467866">
+          <view class="data-v-91467866">{{item.titel}}</view>
+          <view class="pos-abs rig data-v-91467866">{{item.value}}</view>
+        </view>
+      </block>
+      <view class="line data-v-91467866"></view>
+      <block wx:if="{{val}}">
+        <view class="qrimg flex ju-center data-v-91467866">
+          <tki-qrcode vue-id="6e0ad088-2" cid="qrcode1" val="{{val}}" size="{{size}}" unit="{{unit}}"
+            background="{{background}}" foreground="{{foreground}}" pdground="{{pdground}}" icon="{{icon}}"
+            iconSize="{{iconsize}}" lv="{{lv}}" showLoading="{{false}}" onval="{{onval}}" loadMake="{{loadMake}}"
+            usingComponents="{{true}}" data-ref="qrcode" class="data-v-91467866 vue-ref" bind:__l="__l"></tki-qrcode>
+        </view>
+      </block>
+      <block wx:if="{{redIMG}}">
+        <view class="data-v-91467866">
+          <view class="tex1 data-v-91467866">补充图片</view>
+          <view class="imgBox data-v-91467866">
+            <image class="redImg data-v-91467866" src="{{redIMG}}" mode></image>
+          </view>
+        </view>
+      </block>
+      <view class="tex1 data-v-91467866">备注</view>
+      <view class="frame data-v-91467866">
+        <view wx:if="{{remark}}">{{''+remark+''}}</view>
+      </view>
+      <view class="tex1 data-v-91467866">申请结果</view>
+      <view class="frame data-v-91467866">
+        <view wx:if="{{result}}"> {{''+result+''}}</view>
+       </view>
+      <view class="linet data-v-91467866"></view>
+    </view>
+  </block>
+  <view hidden="{{!(!getmsg.info&&isLoding==false)}}" class="onon flex al-center ju-center data-v-91467866">
+    您还没有最新的拜访申请，快去<view data-event-opts="{{[['tap',[['addTo',['$event']]]]]}}" class="apply data-v-91467866"
+      bindtap="__e">申请</view>吧~</view>
+  <view hidden="{{!(isLoding==true)}}" class="showloding flex al-center ju-center data-v-91467866">
+    <view class="loding flex-d al-center ju-center data-v-91467866">
+      <view class="  data-v-91467866">
+        <image class="loimg data-v-91467866" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>加载中
+    </view>
+  </view>
+ 
+</view>

@@ -1,0 +1,140 @@
+.fixed.data-v-3c31ec82 {
+  position: fixed;
+  z-index: 9
+}
+
+.topLine.data-v-3c31ec82 {
+  height: 148rpx
+}
+
+.searchBox.data-v-3c31ec82 {
+  width: 750rpx;
+  height: 40rpx;
+  position: fixed;
+  background: #F07535;
+  color: #fff;
+  font-size: 16px;
+  z-index: 9;
+}
+.higTop{
+  height: 40rpx;
+}
+.allTxt {
+  top: -20rpx;
+  position: absolute;
+  right: 50rpx;
+ 
+}
+.xlshow.data-v-3c31ec82 {
+  position: fixed;
+  width: 160rpx;
+  background: #fff;
+  top: 170rpx;
+  right: 30rpx;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  z-index: 9;
+  padding-bottom: 30rpx;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.itemLabel.data-v-3c31ec82 {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20rpx
+}
+
+.back.data-v-3c31ec82 {
+  width: 100%;
+  background: #f07535;
+  color: #fff
+}
+
+.pullDown.data-v-3c31ec82 {
+  width: 20rpx;
+  height: 12rpx;
+  margin-left: 10rpx
+}
+
+.itemBox.data-v-3c31ec82 {
+  margin-top: 30rpx;
+  width: 650rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  font-size: 14px;
+  padding-bottom: 50rpx;
+  color: #666;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.layoutBox.data-v-3c31ec82 {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+
+.dv.data-v-3c31ec82 {
+  color: #23d400
+}
+
+.nodv.data-v-3c31ec82 {
+  color: #f07535
+}
+
+.noPost.data-v-3c31ec82 {
+  font-size: 14px;
+  color: #666;
+  margin-top: 100rpx
+}
+
+.bomLine.data-v-3c31ec82 {
+  font-size: 12px;
+  padding: 30rpx 0;
+
+}
+
+.showloding.data-v-3c31ec82 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.lodimg.data-v-3c31ec82 {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx
+}
+
+.lodbox.data-v-3c31ec82 {
+  padding: 20rpx 0;
+  font-size: 24rpx
+}
+
+.loimg.data-v-3c31ec82 {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-3c31ec82 {
+  width: 260rpx;
+  height: 200rpx;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  background: rgba(88, 88, 88, .8)
+}
+
+.bomLine.data-v-3c31ec82 {
+  height: 50rpx
+}

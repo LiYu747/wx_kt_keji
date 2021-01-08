@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "subunit": "/components/sub-unit/subunit",
+    "drag-sorts": "/components/drag-sorts/index"
+  }
+}

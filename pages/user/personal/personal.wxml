@@ -1,0 +1,38 @@
+<view class="whole flex-d al-center data-v-b4d4c940">
+  <subunit vue-id="27924762-1" titel="个人信息" retur="{{true}}" data-event-opts="{{[['^goback',[['goback']]]]}}"
+    bind:goback="__e" class="data-v-b4d4c940" bind:__l="__l"></subunit>
+  <view data-event-opts="{{[['tap',[['UploadAvatar',['$event']]]]]}}"
+    class="activ flex al-center ju-center data-v-b4d4c940" bindtap="__e">
+    <image class="img data-v-b4d4c940" src="{{image}}" mode></image>
+  </view>
+  <view data-event-opts="{{[['tap',[['UploadAvatar',['$event']]]]]}}" class="text data-v-b4d4c940" bindtap="__e">上传头像
+  </view>
+  <view class="postop data-v-b4d4c940">
+    <block wx:for="{{parameter}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <view data-event-opts="{{[['tap',[['xuaz',[index]]]]]}}"
+        class="{{['fied flex al-center data-v-b4d4c940',(index===parameter.length-1)?'dv':'',(item.value==='预览')?'colr':'']}}"
+        bindtap="__e">
+        <u-field bind:input="__e" vue-id="{{'27924762-2-'+index}}" label-width="300" label="{{item.label}}"
+          clearable="{{false}}" input-align="right" disabled="{{item.disabled}}" value="{{item.value}}"
+          data-event-opts="{{[['^input',[['__set_model',['$0','value','$event',[]],[[['parameter','id',item.id]]]]]]]}}"
+          class="data-v-b4d4c940" bind:__l="__l"></u-field>
+      </view>
+    </block>
+    <u-select vue-id="27924762-3" default-value="{{value}}" list="{{list}}" value="{{show}}"
+      data-event-opts="{{[['^confirm',[['ok']]],['^input',[['__set_model',['','show','$event',[]]]]]]}}"
+      bind:confirm="__e" bind:input="__e" class="data-v-b4d4c940" bind:__l="__l"></u-select>
+  </view>
+  <view data-event-opts="{{[['tap',[['Submit',['$event']]]]]}}" class="end flex al-center ju-center data-v-b4d4c940"
+    bindtap="__e">
+    <image class="enimg data-v-b4d4c940" src="https://oss.kuaitongkeji.com/static/img/app/login/ccuc.png" mode></image>
+    <view class=" pos-abs data-v-b4d4c940">提交</view>
+  </view>
+  <view hidden="{{!(isLoding==true)}}" class="showloding flex al-center ju-center data-v-b4d4c940">
+    <view class="loding flex-d al-center ju-center data-v-b4d4c940">
+      <view class="  data-v-b4d4c940">
+        <image class="loimg data-v-b4d4c940" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>上传中
+    </view>
+  </view>
+</view>

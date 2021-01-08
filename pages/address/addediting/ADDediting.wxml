@@ -1,0 +1,61 @@
+<view class="flex-d al-center data-v-2538df72">
+  <subunit class="fixed data-v-2538df72" vue-id="ea66c68a-1" titel="地址详情" bind:__l="__l"></subunit>
+  <view class="topLine data-v-2538df72"></view>
+  <view class="content data-v-2538df72">
+    <view class="postop data-v-2538df72">
+      <block wx:for="{{parameter}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view class="{{[' fied flex-d  pos-rel ju-center data-v-2538df72',(index===parameter.length-1)?'dv':'']}}">
+          <u-field bind:input="__e" vue-id="{{'ea66c68a-2-'+index}}" label-width="150" label="{{item.label}}"
+            clearable="{{false}}" disabled="{{item.disabled}}" value="{{item.value}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','value','$event',[]],[[['parameter','id',item.id]]]]]]]}}"
+            class="data-v-2538df72" bind:__l="__l"></u-field>
+          <view class="line  pos-abs data-v-2538df72"></view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="memberBox data-v-2538df72">
+    <view class="memberTil flex al-center ju-between data-v-2538df72">成员<block wx:if="{{Islimits==1}}">
+        <image class="pushtagimg data-v-2538df72" src="https://oss.kuaitongkeji.com/static/img/app/forum/pushtag.png"
+          mode data-event-opts="{{[['tap',[['pushMember',['$event']]]]]}}" bindtap="__e"></image>
+      </block>
+    </view>
+    <block wx:if="{{Members.length>0}}">
+      <view class="data-v-2538df72">
+        <block wx:for="{{Members}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+          <view data-event-opts="{{[['tap',[['memberInfo',['$0'],[[['Members','id',item.id]]]]]]]}}"
+            class="{{['itemBox flex ju-between al-center data-v-2538df72',(index==Members.length-1)?'itemBtm':'']}}"
+            bindtap="__e">
+            <view class="data-v-2538df72">
+              <view class="flex data-v-2538df72">姓名<block wx:if="{{item.own_user}}">
+                  <view class="m-l2 data-v-2538df72">{{''+item.own_user.username+''}}</view>
+                </block>
+              </view>
+              <view class="flex m-t2 data-v-2538df72">手机号码<block wx:if="{{item.own_user}}">
+                  <view class="m-l2 data-v-2538df72">{{''+item.own_user.tel+''}}</view>
+                </block>
+              </view>
+            </view>
+            <block wx:if="{{Islimits==1}}">
+              <view class="data-v-2538df72">
+                <image class="reimg data-v-2538df72"
+                  src="https://oss.kuaitongkeji.com/static/img/app/address/retrue.png" mode></image>
+              </view>
+            </block>
+          </view>
+        </block>
+      </view>
+    </block>
+    <block wx:if="{{Members.length==0&&isLoding==false}}">
+      <view class="nomen flex ju-center data-v-2538df72">暂时还没有成员</view>
+    </block>
+  </view>
+  <view hidden="{{!(isLoding==true)}}" class="showloding flex al-center ju-center data-v-2538df72">
+    <view class="loding flex-d al-center ju-center data-v-2538df72">
+      <view class="  data-v-2538df72">
+        <image class="loimg data-v-2538df72" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>加载中
+    </view>
+  </view>
+</view>

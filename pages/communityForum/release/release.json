@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "subrelease": "/components/sub-botn/subrelease",
+    "subunit": "/components/sub-unit/subunit"
+  }
+}

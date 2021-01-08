@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#F07535",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "subunit": "/components/sub-unit/subunit",
+    "add-list": "/components/address/addlist"
+  }
+}

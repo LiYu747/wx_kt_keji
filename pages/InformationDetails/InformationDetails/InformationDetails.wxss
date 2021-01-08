@@ -1,0 +1,26 @@
+page {
+  background: #fff !important
+}
+
+.pos {
+  position: fixed
+}
+
+.line {
+  height: 128rpx
+}
+
+.titel {
+  margin-top: 60rpx;
+  width: 612rpx;
+  height: 66rpx;
+  font-size: 36rpx;
+  margin-bottom: 100rpx;
+  color: #666
+}
+
+.desc {
+  padding: 30rpx
+}
+
+.response-img{width: 100%!important;height: auto;margin: 0!important;padding: 0!important;display: block; }

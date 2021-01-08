@@ -1,0 +1,21 @@
+<view class="data-v-742e8fc6">
+  <view class="conten data-v-742e8fc6">
+    <view class="flex al-center data-v-742e8fc6">
+      <view class="data-v-742e8fc6">
+        <image class="imgss data-v-742e8fc6" src="https://oss.kuaitongkeji.com/static/img/app/home/news.png" mode>
+        </image>
+      </view>
+      <view class="textss data-v-742e8fc6">社区新闻</view>
+    </view>
+    <view class="Notice flex al-center data-v-742e8fc6">
+      <block wx:if="{{list.length>0}}">
+        <u-notice-bar class="notice data-v-742e8fc6" vue-id="c68b735c-1" mode="vertical" font-size="24"
+          is-circular="{{false}}" type="warning" list="{{list}}" data-event-opts="{{[['^click',[['godils']]]]}}"
+          bind:click="__e" bind:__l="__l"></u-notice-bar>
+      </block>
+      <block wx:else>
+        <view class="nonews data-v-742e8fc6">暂无社区新闻...</view>
+      </block>
+    </view>
+  </view>
+</view>

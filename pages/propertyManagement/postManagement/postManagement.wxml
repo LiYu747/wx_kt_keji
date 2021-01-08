@@ -1,0 +1,53 @@
+<view class="data-v-3c31ec82">
+  <subunit class="fixed data-v-3c31ec82" vue-id="243602f5-1" titel="帖子管理" bind:__l="__l"></subunit>
+  <view class="topLine data-v-3c31ec82"></view>
+  <view class="searchBox  data-v-3c31ec82">
+    <view  data-event-opts="{{[['tap',[['e0',['$event']]]]]}}"  bindtap="__e" class="allTxt flex al-center data-v-3c31ec82">筛选<image class="pullDown data-v-3c31ec82"
+        src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/pullDown.png" mode></image>
+    </view>
+  </view>
+  <view hidden="{{!(xlshow==true)}}" class="xlshow  data-v-3c31ec82">
+    <block wx:for="{{condition}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <view data-event-opts="{{[['tap',[['select',[item,index],[[['condition','id',item.id]]]]]]]}}"
+        class="{{['itemLabel flex al-center ju-center data-v-3c31ec82',(index==idx)?'back':'']}}" bindtap="__e">
+        {{''+item.label+''}}</view>
+    </block>
+  </view>
+  <view class="higTop"></view>
+  <block wx:if="{{lists.length>0}}">
+    <view class="flex-d al-center data-v-3c31ec82">
+      <block wx:for="{{lists}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+        <view data-event-opts="{{[['tap',[['goDetails',['$0'],[[['lists','id',item.id]]]]]]]}}"
+          class="itemBox data-v-3c31ec82" bindtap="__e">
+          <view class="layoutBox flex al-center ju-between data-v-3c31ec82">{{'标题 : '+item.title+''}}<view
+              class="{{['data-v-3c31ec82',item.verify_status_text=='通过审核'?'dv':'nodv']}}">
+              {{''+item.verify_status_text+' >'}}</view>
+          </view>
+          <view class="layoutBox data-v-3c31ec82">{{'发布时间 : '+item.created_at+''}}</view>
+        </view>
+      </block>
+    </view>
+  </block>
+  <block wx:if="{{lists.length==0&&isLoading==false&&falg==false}}">
+    <view class="noPost flex ju-center data-v-3c31ec82">暂时还没有发布的帖子</view>
+  </block>
+  <block wx:if="{{lists.length==0&&isLoading==false&&falg==true}}">
+    <view class="noPost flex ju-center data-v-3c31ec82">没有您要看的帖子</view>
+  </block>
+  <block wx:if="{{hasMore==false}}">
+    <view class="bomLine flex ju-center al-center data-v-3c31ec82">{{''+noText+''}}</view>
+  </block>
+  <view hidden="{{!(isLoading==true&&lists.length>0)}}" class=" flex ju-center al-center lodbox data-v-3c31ec82">
+    <image class="lodimg data-v-3c31ec82" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+    </image>加载中...
+  </view>
+  <view hidden="{{!(isLoading==true&&lists.length==0)}}" class="showloding flex al-center ju-center data-v-3c31ec82">
+    <view class="loding flex-d al-center ju-center data-v-3c31ec82">
+      <view class="  data-v-3c31ec82">
+        <image class="loimg data-v-3c31ec82" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>加载中
+    </view>
+  </view>
+  <view class="a"></view>
+</view>

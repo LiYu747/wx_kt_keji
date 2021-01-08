@@ -1,0 +1,25 @@
+<view class="_div data-v-c8a27502">
+  <view class="box data-v-c8a27502">
+    <view class="flex al-center data-v-c8a27502">
+      <image class="imgss data-v-c8a27502" src="https://oss.kuaitongkeji.com/static/img/app/home/sq(1)@2x.png" mode>
+      </image>
+      <view class="text data-v-c8a27502">社区资讯</view>
+    </view>
+    <view class="overtxt flex al-center data-v-c8a27502">
+      <block wx:if="{{loctext.length>0}}">
+        <view class="context data-v-c8a27502">
+          <block wx:for="{{loctext}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+            <view class="ltst  data-v-c8a27502">{{''+item.title+''}}</view>
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="onmsg data-v-c8a27502">暂无社区资讯...</view>
+      </block>
+      <block wx:if="{{loctext.length>0}}">
+        <view data-event-opts="{{[['tap',[['lookup',['$event']]]]]}}"
+          class="btn flex al-center ju-center data-v-c8a27502" bindtap="__e">查看详情 ></view>
+      </block>
+    </view>
+  </view>
+</view>

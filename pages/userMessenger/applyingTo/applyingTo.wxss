@@ -1,0 +1,163 @@
+.fixed.data-v-629add5b {
+  position: fixed;
+  z-index: 9
+}
+
+.record.data-v-629add5b {
+  color: #F07535;
+  font-size: 15px;
+  text-align: right;
+}
+
+.lineTop.data-v-629add5b {
+  height: 148rpx
+}
+
+.msgBox.data-v-629add5b {
+  margin-top: 30rpx;
+  width: 650rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  padding-bottom: 40rpx;
+  color: #666;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.msgTil.data-v-629add5b {
+  font-size: 16px
+}
+
+.msgItem.data-v-629add5b {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #bfbfbf
+}
+
+.msgIpt.data-v-629add5b {
+  text-align: right;
+  width: 500rpx;
+  font-size: 14px
+}
+
+.itemLabel.data-v-629add5b {
+  font-size: 14px
+}
+
+.accessoryBox.data-v-629add5b {
+  margin-top: 30rpx;
+  width: 650rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  padding-bottom: 40rpx;
+  color: #666;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.accTitle.data-v-629add5b {
+  font-size: 16px;
+  height: 60rpx;
+  border-bottom: 1px solid #bfbfbf
+}
+
+.input-placeholder.data-v-629add5b {
+  color: #999
+}
+
+.annotation.data-v-629add5b {
+  font-size: 12px;
+  color: red
+}
+
+.fileBox.data-v-629add5b {
+  margin-top: 20rpx;
+  width: 600rpx;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+.pushBtn.data-v-629add5b {
+  width: 130rpx;
+  height: 150rpx;
+  background: #f4f5f6
+}
+
+.itenImg.data-v-629add5b {
+  width: 130rpx;
+  height: 150rpx;
+  margin-right: 20rpx
+}
+
+.pushimg.data-v-629add5b {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.Submit.data-v-629add5b {
+  width: 358rpx;
+  height: 68rpx
+}
+
+.subText.data-v-629add5b {
+  color: #fff;
+  z-index: 9
+}
+
+.mar-t.data-v-629add5b {
+  margin-top: 60rpx;
+  margin-bottom: 20rpx
+}
+
+.remarkBox.data-v-629add5b {
+  margin-top: 40rpx;
+  width: 650rpx;
+  background: #fff;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  color: #666;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1);
+  box-shadow: 0 4px 4px 0 rgba(9, 9, 9, .1)
+}
+
+.reTil.data-v-629add5b {
+  width: 100%;
+  height: 60rpx;
+  border-bottom: 1px solid #ccc
+}
+
+.reArea.data-v-629add5b {
+  width: 96%;
+  height: 120rpx;
+  padding: 10rpx 2%;
+  background: #fff;
+  font-size: 14px
+}
+
+.showloding.data-v-629add5b {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-629add5b {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-629add5b {
+  width: 260rpx;
+  height: 200rpx;
+  background: rgba(88, 88, 88, .8)
+}
+
+.LineBtom{
+  height: 40rpx;
+}

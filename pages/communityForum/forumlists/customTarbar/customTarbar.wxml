@@ -1,0 +1,15 @@
+<view class="flex-d al-center data-v-28aedce9">
+  <subunit vue-id="2d3e93e4-1"  class="data-v-28aedce9" bind:__l="__l"></subunit>
+  <view class="wraps data-v-28aedce9">
+    <view class="title flex pos-rel data-v-28aedce9">
+      <view class=" m-l2 data-v-28aedce9">分类</view>
+      <view data-event-opts="{{[['tap',[['redact',['$event']]]]]}}" class="rigth pos-abs data-v-28aedce9" bindtap="__e">
+        编辑</view>
+    </view>
+    <view class="  wrap data-v-28aedce9">
+      <drag-sorts vue-id="2d3e93e4-2" list="{{getData}}" props="{{props}}" data-ref="drag"
+        data-event-opts="{{[['^change',[['onDragSortChange']]]]}}" bind:change="__e" class="data-v-28aedce9 vue-ref"
+        bind:__l="__l"></drag-sorts>
+    </view>
+  </view>
+</view>

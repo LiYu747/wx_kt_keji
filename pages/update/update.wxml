@@ -1,0 +1,1 @@
+<view class=" flex updata ju-center al-center data-v-64088e68"><u-button vue-id="3085fc20-1" type="success" data-event-opts="{{[['^click',[['go']]]]}}" bind:click="__e" class="data-v-64088e68" bind:__l="__l" vue-slots="{{['default']}}">去更新</u-button></view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "subunit": "/components/sub-unit/subunit",
+    "subbotn": "/components/sub-botn/subbotn"
+  }
+}

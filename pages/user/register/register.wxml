@@ -1,0 +1,102 @@
+<view class="back data-v-1e3fdd5a">
+  <view class="nav pos-rel flex al-center ju-center data-v-1e3fdd5a">
+    <image class="img pos-abs data-v-1e3fdd5a" src="https://oss.kuaitongkeji.com/static/img/app/login/fanhui.png" mode
+      data-event-opts="{{[['tap',[['goback',['$event']]]]]}}" bindtap="__e"></image>
+    <view class="text data-v-1e3fdd5a">注册</view>
+  </view>
+  <view class="logo flex ju-center data-v-1e3fdd5a">
+    <image class="logoimg data-v-1e3fdd5a" src="https://oss.kuaitongkeji.com/static/img/app/login/logo.png" mode>
+    </image>
+  </view>
+  <view class="top flex-d al-center data-v-1e3fdd5a">
+    <u-form vue-id="5a332402-1" model="{{form}}" data-ref="uForm" class="data-v-1e3fdd5a vue-ref" bind:__l="__l"
+      vue-slots="{{['default']}}">
+      <u-form-item class="postop data-v-1e3fdd5a" vue-id="{{('5a332402-2')+','+('5a332402-1')}}"  prop="nickname"
+        bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-1e3fdd5a">
+          <image class="nameimg pos-abs data-v-1e3fdd5a"
+            src="https://oss.kuaitongkeji.com/static/img/app/register/my.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-1e3fdd5a" vue-id="{{('5a332402-3')+','+('5a332402-2')}}"
+            clearable="{{flag}}" placeholder="昵称(用于给他人展示)" value="{{form.nickname}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','nickname','$event',[]],['form']]]]]}}" bind:__l="__l">
+          </u-input>
+        </view>
+      </u-form-item>
+      <u-form-item class="postop data-v-1e3fdd5a" vue-id="{{('5a332402-4')+','+('5a332402-1')}}"  prop="name"
+        bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-1e3fdd5a">
+          <image class="nameimg pos-abs data-v-1e3fdd5a"
+            src="https://oss.kuaitongkeji.com/static/img/app/register/my.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-1e3fdd5a" vue-id="{{('5a332402-5')+','+('5a332402-4')}}"
+            clearable="{{flag}}" placeholder="真实姓名" value="{{form.name}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','name','$event',[]],['form']]]]]}}" bind:__l="__l">
+          </u-input>
+        </view>
+      </u-form-item>
+      <u-form-item class="postop data-v-1e3fdd5a" vue-id="{{('5a332402-6')+','+('5a332402-1')}}"  prop="idphoto"
+        bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-1e3fdd5a">
+          <image class="idptimg pos-abs data-v-1e3fdd5a"
+            src="https://oss.kuaitongkeji.com/static/img/app/register/photo.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-1e3fdd5a" vue-id="{{('5a332402-7')+','+('5a332402-6')}}"
+            disabled="{{true}}" clearable="{{flag}}" placeholder="上传人像照片" value="{{form.idphoto}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','idphoto','$event',[]],['form']]]]]}}" bind:__l="__l">
+          </u-input>
+          <block wx:if="{{toot==false}}">
+            <view data-event-opts="{{[['tap',[['upload',['$event']]]]]}}" class="upload pos-abs data-v-1e3fdd5a"
+              bindtap="__e">上传</view>
+          </block>
+          <block wx:else>
+            <view data-event-opts="{{[['tap',[['preview',['$event']]]]]}}" class="upload pos-abs data-v-1e3fdd5a"
+              bindtap="__e">预览</view>
+          </block>
+        </view>
+      </u-form-item>
+      <u-form-item class="postop data-v-1e3fdd5a" vue-id="{{('5a332402-8')+','+('5a332402-1')}}"  prop="phone"
+        bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-1e3fdd5a">
+          <image class="iptimg pos-abs data-v-1e3fdd5a"
+            src="https://oss.kuaitongkeji.com/static/img/app/login/phone.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-1e3fdd5a" vue-id="{{('5a332402-9')+','+('5a332402-8')}}"
+            type="number" clearable="{{flag}}" placeholder="手机号" value="{{form.phone}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','phone','$event',[]],['form']]]]]}}" bind:__l="__l">
+          </u-input>
+        </view>
+      </u-form-item>
+      <u-form-item class="postop data-v-1e3fdd5a" vue-id="{{('5a332402-10')+','+('5a332402-1')}}" 
+        prop="Verification" bind:__l="__l" vue-slots="{{['default']}}">
+        <view class="uiput flex al-center pos-rel data-v-1e3fdd5a">
+          <image class="iptimg2 pos-abs data-v-1e3fdd5a"
+            src="https://oss.kuaitongkeji.com/static/img/app/login/security.png" mode></image>
+          <u-input bind:input="__e" class="ipt data-v-1e3fdd5a" vue-id="{{('5a332402-11')+','+('5a332402-10')}}"
+            type="number" clearable="{{flag}}" placeholder="验证码" value="{{form.Verification}}"
+            data-event-opts="{{[['^input',[['__set_model',['$0','Verification','$event',[]],['form']]]]]}}"
+            bind:__l="__l"></u-input>
+          <view data-ref="code" data-event-opts="{{[['tap',[['addvercode',['$event']]]]]}}"
+            class="{{['vcode pos-abs flex al-center ju-center data-v-1e3fdd5a vue-ref',(code===false)?'dv':'']}}"
+            bindtap="__e">
+            <view class="tetxs data-v-1e3fdd5a">{{''+text+''}}</view>
+          </view>
+        </view>
+        <u-toast vue-id="{{('5a332402-12')+','+('5a332402-10')}}" data-ref="uToast" class="data-v-1e3fdd5a vue-ref"
+          bind:__l="__l"></u-toast>
+      </u-form-item>
+    </u-form>
+  </view>
+  <view class="flex-d al-center data-v-1e3fdd5a">
+    <view data-event-opts="{{[['tap',[['register',['$event']]]]]}}"
+      class="btn pos-rel flex ju-center al-center data-v-1e3fdd5a" bindtap="__e">
+      <image class="jbsimg data-v-1e3fdd5a" src="https://oss.kuaitongkeji.com/static/img/app/login/jbs.png" mode>
+      </image>
+      <view class="lgtext pos-abs data-v-1e3fdd5a">注册</view>
+    </view>
+  </view>
+  <view hidden="{{!(isLoding==true)}}" class="showloding flex al-center ju-center data-v-1e3fdd5a">
+    <view class="loding flex-d al-center ju-center data-v-1e3fdd5a">
+      <view class="  data-v-1e3fdd5a">
+        <image class="loimg data-v-1e3fdd5a" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>上传中
+    </view>
+  </view>
+</view>

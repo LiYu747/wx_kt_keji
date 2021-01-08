@@ -1,0 +1,66 @@
+<view class="data-v-1c172c9b">
+  <subunit vue-id="23cacca7-1" retur="{{false}}" titel="快递 外卖" class="data-v-1c172c9b" bind:__l="__l"></subunit>
+  <view class="userSelection pos-abs data-v-1c172c9b">
+    <image class="sjxlIcon data-v-1c172c9b" src="https://oss.kuaitongkeji.com/static/img/app/home/sjxl.png" mode
+      data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e"></image>
+    <view hidden="{{!(isShowType==true)}}" class="typeBox flex-d al-center data-v-1c172c9b">
+      <image class="xljxImg data-v-1c172c9b" src="https://oss.kuaitongkeji.com/static/img/app/home/xljx.png" mode>
+      </image>
+      <view class="typeLine data-v-1c172c9b"></view>
+      <block wx:for="{{userType}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['selecType',[item],[[['userType','id',item.id]]]]]]]}}"
+          class="fz-12 itemType flex ju-center al-center data-v-1c172c9b" bindtap="__e">{{''+item.name+''}}</view>
+      </block>
+    </view>
+  </view>
+  <block wx:if="{{code==200}}">
+    <view class="data-v-1c172c9b">
+      <view class="contenBox flex data-v-1c172c9b">
+        <view class="data-v-1c172c9b">
+          <view data-event-opts="{{[['tap',[['passQrCode',['$event']]]]]}}" class="passQrCode data-v-1c172c9b"
+            bindtap="__e">
+            <image class="back1Img pos-abs data-v-1c172c9b"
+              src="https://oss.kuaitongkeji.com/static/img/app/userMessenger/back1.png" mode></image>
+            <view class="prcline data-v-1c172c9b"></view>
+            <view class="prctext data-v-1c172c9b">通行二维码</view>
+            <view class="data-v-1c172c9b">
+              <image class="qecodeImg data-v-1c172c9b"
+                src="https://oss.kuaitongkeji.com/static/img/app/userMessenger/qecode.png" mode></image>
+            </view>
+          </view>
+        </view>
+        <view class="m-l2 data-v-1c172c9b">
+          <view data-event-opts="{{[['tap',[['myInfo',['$event']]]]]}}" bindtap="__e" class="data-v-1c172c9b">
+            <view class="data-v-1c172c9b">
+              <image class="ApplyingTo data-v-1c172c9b"
+                src="https://oss.kuaitongkeji.com/static/img/app/userMessenger/goto.png" mode></image>
+            </view>
+          </view>
+          <view data-event-opts="{{[['tap',[['VisitToApply',['$event']]]]]}}" class=" m-t1 data-v-1c172c9b"
+            bindtap="__e">
+            <view class="data-v-1c172c9b">
+              <image class="ApplyingTo data-v-1c172c9b"
+                src="https://oss.kuaitongkeji.com/static/img/app/userMessenger/visit.png" mode></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view data-event-opts="{{[['tap',[['navigation',['$event']]]]]}}" class=" flex ju-center data-v-1c172c9b"
+        bindtap="__e">
+        <image class="pathImg data-v-1c172c9b" src="https://oss.kuaitongkeji.com/static/img/app/userMessenger/path.png"
+          mode></image>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{code==403}}">
+    <view class="flex-d al-center nointo data-v-1c172c9b">
+      <view class="data-v-1c172c9b">您还没有申请成为外卖或者快递员</view>
+      <view data-event-opts="{{[['tap',[['ApplyingTo',['$event']]]]]}}" class="m-t2 gointo data-v-1c172c9b"
+        bindtap="__e">去申请成为</view>
+      <view class="m-t4 flex al-center data-v-1c172c9b">若您已申请<view
+          data-event-opts="{{[['tap',[['application',['$event']]]]]}}" class="m-l2 gointo data-v-1c172c9b"
+          bindtap="__e">去查看申请进度</view>
+      </view>
+    </view>
+  </block>
+</view>

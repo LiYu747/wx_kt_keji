@@ -1,0 +1,65 @@
+<view class="fz-12 data-v-26556e90">
+  <subunit class="fixed data-v-26556e90" vue-id="0a812356-1" titel="小区简介" bind:__l="__l"></subunit>
+  <view class="line data-v-26556e90"></view>
+  <view class="data-v-26556e90">
+    <block wx:if="{{list.length>0}}">
+      <u-swiper vue-id="0a812356-2" list="{{list}}" border-radius="0" height="350" class="data-v-26556e90"
+        bind:__l="__l"></u-swiper>
+    </block>
+    <block wx:if="{{list.length==0}}">
+      <u-swiper vue-id="0a812356-3" list="{{localist}}" border-radius="0" height="350" class="data-v-26556e90"
+        bind:__l="__l"></u-swiper>
+    </block>
+  </view>
+  <view class="flex-d al-center data-v-26556e90">
+    <view class="nav flex-d al-center pos-rel data-v-26556e90">
+      <view class="tex1 data-v-26556e90">{{arr.name}}</view>
+      <view class="{{['tex2 flex al-center ju-center data-v-26556e90',(idx===0)?'te2':'']}}">
+        <block wx:for="{{titel}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+          <view data-event-opts="{{[['tap',[['add',[index]]]]]}}"
+            class="{{['item data-v-26556e90',(index===1)?'dv':'',(idx===index)?'colr':'']}}" bindtap="__e">
+            {{''+item+''}}</view>
+        </block>
+        <view data-event-opts="{{[['tap',[['goforum',['$event']]]]]}}" bindtap="__e" class="data-v-26556e90">论坛</view>
+      </view>
+      <view hidden="{{!(idx===0)}}" class="content data-v-26556e90">
+        <view class="addressBox flex pos-rel data-v-26556e90">
+          <view class="addText data-v-26556e90">{{'小区地址：\n\t\t\t\t\t\t\t'+detailedAddress+''}}</view>
+          <view class="goHere flex pos-abs data-v-26556e90">
+            <image class="addicon data-v-26556e90" src="https://oss.kuaitongkeji.com/static/img/app/forum/addicon.png"
+              mode data-event-opts="{{[['tap',[['navigation',['$event']]]]]}}" bindtap="__e"></image>
+          </view>
+        </view>
+        <view class="m-t2 data-v-26556e90">{{arr.brief}}</view>
+      </view>
+      <view hidden="{{!(idx===1)}}" class="twbx m-t2 data-v-26556e90">
+        <block wx:if="{{Notice.length>0}}">
+          <view class="data-v-26556e90">
+            <block wx:for="{{Notice}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+              <view class="data-v-26556e90">
+                <view data-event-opts="{{[['tap',[['godils',['$0'],[[['Notice','id',item.id]]]]]]]}}"
+                  class="wid data-v-26556e90" bindtap="__e">{{''+(index+1)+" . "+item.title+''}}</view>
+              </view>
+            </block>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="data-v-26556e90">暂无公告</view>
+        </block>
+      </view>
+    </view>
+    <block wx:if="{{idx===0&&arr.desc}}">
+      <view class="foot data-v-26556e90">
+        <u-parse vue-id="0a812356-4" html="{{arr.desc}}" class="data-v-26556e90" bind:__l="__l"></u-parse>
+      </view>
+    </block>
+  </view>
+  <view hidden="{{!(isLoding==true)}}" class="showloding flex al-center ju-center data-v-26556e90">
+    <view class="loding flex-d al-center ju-center data-v-26556e90">
+      <view class="  data-v-26556e90">
+        <image class="loimg data-v-26556e90" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>加载中
+    </view>
+  </view>
+</view>

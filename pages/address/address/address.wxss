@@ -1,0 +1,67 @@
+.lodimg.data-v-9f890c90 {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.img.data-v-9f890c90 {
+  margin-top: 128rpx;
+  width: 100%;
+  height: 156rpx
+}
+
+.sj.data-v-9f890c90 {
+  width: 0;
+  height: 0;
+  border-width: 0 20rpx 20rpx;
+  border-style: solid;
+  border-color: transparent transparent red;
+  left: 94rpx
+}
+
+.shows.data-v-9f890c90 {
+  top: 128rpx;
+  left: 20rpx;
+  z-index: 3
+}
+
+.showimg.data-v-9f890c90 {
+  width: 130rpx;
+  height: 76rpx
+}
+
+.fled.data-v-9f890c90 {
+  position: fixed;
+  z-index: 9
+}
+
+.show.data-v-9f890c90 {
+  width: 100%;
+  height: 100vh;
+  z-index: 9
+}
+
+.showcentent.data-v-9f890c90 {
+  top: 100rpx;
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx
+}
+
+.showloding.data-v-9f890c90 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-9f890c90 {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-9f890c90 {
+  width: 260rpx;
+  height: 200rpx;
+  background: rgba(88, 88, 88, .8)
+}

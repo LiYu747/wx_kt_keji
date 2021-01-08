@@ -1,0 +1,65 @@
+<view class="data-v-1ec2234e">
+  <view class="fiedx data-v-1ec2234e">
+    <subunit vue-id="3a12b115-1" titel="入住查看" class="data-v-1ec2234e" bind:__l="__l"></subunit>
+    <view  class="searchBox   data-v-1ec2234e" >
+      <view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e" class="allTxt flex al-center data-v-1ec2234e">筛选<image class="pullDown data-v-1ec2234e"
+          src="https://oss.kuaitongkeji.com/static/img/app/propertyManagement/pullDown.png" mode></image>
+      </view>
+    </view>
+    <view hidden="{{!(xlshow==true)}}" class="xlshow  data-v-1ec2234e">
+      <block wx:for="{{condition}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['select',[item,index],[[['condition','id',item.id]]]]]]]}}"
+          class="{{['itemLabel flex al-center ju-center data-v-1ec2234e',(index==idx)?'back':'']}}" bindtap="__e">
+          {{''+item.label+''}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="topLine data-v-1ec2234e"></view>
+  <block wx:if="{{lists.length>0}}">
+    <view class="flex-d m-t1 al-center data-v-1ec2234e">
+      <block wx:for="{{lists}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view data-event-opts="{{[['tap',[['goDetails',['$0'],[[['lists','id',item.id]]]]]]]}}"
+          class="itemBox data-v-1ec2234e" bindtap="__e">
+          <view class="itemName flex al-center ju-between data-v-1ec2234e">
+            <view class="data-v-1ec2234e">{{'姓名：'+item.own_user.username+''}}</view>
+            <view class="{{['data-v-1ec2234e',item.verify_status_text=='已通过'?'dv':'nodv']}}">
+              {{''+item.verify_status_text+'>'}}</view>
+          </view>
+          <view class="itemName flex al-center data-v-1ec2234e">
+            <view class="data-v-1ec2234e">电话：</view>
+            <view class="data-v-1ec2234e">{{''+item.own_user.tel+''}}</view>
+          </view>
+          <view class="itemName flex al-center data-v-1ec2234e">
+            <view class="data-v-1ec2234e">申请时间：</view>
+            <view class="data-v-1ec2234e">{{''+item.created_at+''}}</view>
+          </view>
+          <view class="itemName flex al-center data-v-1ec2234e">
+            <view class="data-v-1ec2234e">地址：</view>
+            <view class="data-v-1ec2234e">{{''+item.address+''}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+  <block wx:if="{{lists.length==0&&isLoading==false&&falg==false}}">
+    <view class="nocheckin flex ju-center data-v-1ec2234e">暂时没有用户申请</view>
+  </block>
+  <block wx:if="{{lists.length==0&&isLoading==false&&falg==true}}">
+    <view class="nocheckin flex ju-center data-v-1ec2234e">没有筛选条件的用户申请</view>
+  </block>
+  <block wx:if="{{hasMore==false&&lists.length>0}}">
+    <view class="bomLine flex ju-center al-center data-v-1ec2234e">{{''+noText+''}}</view>
+  </block>
+  <view hidden="{{!(isLoading==true&&lists.length>0)}}" class=" flex ju-center al-center lodbox data-v-1ec2234e">
+    <image class="lodimg data-v-1ec2234e" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+    </image>加载中...
+  </view>
+  <view hidden="{{!(isLoading==true&&lists.length==0)}}" class="showloding flex al-center ju-center data-v-1ec2234e">
+    <view class="loding flex-d al-center ju-center data-v-1ec2234e">
+      <view class="  data-v-1ec2234e">
+        <image class="loimg data-v-1ec2234e" src="https://oss.kuaitongkeji.com/static/img/app/address/loading.gif" mode>
+        </image>
+      </view>加载中
+    </view>
+  </view>
+</view>

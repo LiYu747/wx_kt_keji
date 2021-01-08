@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "subclass": "/components/sub-class/subclass",
+    "tki-qrcode": "/components/qrcode/tki-qrcode/tki-qrcode"
+  }
+}

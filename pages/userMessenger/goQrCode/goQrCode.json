@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "subunit": "/components/sub-unit/subunit",
+    "tki-qrcode": "/components/qrcode/tki-qrcode/tki-qrcode"
+  }
+}

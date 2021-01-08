@@ -1,0 +1,150 @@
+.ipt.data-v-0ef266dd {
+  width: 750rpx;
+  height: 88rpx;
+  margin-top: -80rpx
+}
+
+.img.data-v-0ef266dd {
+  width: 33rpx;
+  height: 34rpx;
+  left: 168rpx
+}
+
+.input.data-v-0ef266dd {
+  width: 394rpx;
+  height: 54rpx;
+  background: hsla(0, 0%, 100%, .3);
+  -webkit-border-radius: 27px;
+  border-radius: 27px;
+  padding-left: 75rpx;
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fff
+}
+
+.uni-input-placeholder.data-v-0ef266dd {
+  color: #fff
+}
+
+
+
+.rig.data-v-0ef266dd {
+  width: 35rpx;
+  height: 45rpx;
+  margin-top: -10rpx;
+  left: 49rpx;
+  font-size: 30rpx;
+  color: #fff
+}
+
+.posfidex.data-v-0ef266dd {
+  position: fixed
+}
+
+.bottom.data-v-0ef266dd {
+  height: 148rpx
+}
+
+.top.data-v-0ef266dd {
+  margin-top: 40rpx
+}
+
+.item.data-v-0ef266dd {
+  width: 629rpx;
+  height: 402rpx;
+  background: #fff;
+  -webkit-border-radius: 20rpx;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  padding-left: 29rpx;
+  padding-right: 32rpx;
+  padding-top: 30rpx;
+  padding-bottom: 53rpx
+}
+
+.nameimg.data-v-0ef266dd {
+  width: 17rpx;
+  height: 32rpx
+}
+
+.name.data-v-0ef266dd {
+  font-size: 30rpx;
+  color: #666
+}
+
+.syntext.data-v-0ef266dd {
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 29rpx
+}
+
+.synback.data-v-0ef266dd {
+  padding: 0 20rpx;
+  margin-top: 25rpx;
+  width: 569rpx;
+  height: 98rpx;
+  background: #e6e6e6;
+  padding-right: 20rpx
+}
+
+.aa.data-v-0ef266dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2
+}
+
+.nono.data-v-0ef266dd {
+  width: 100%;
+  height: 300rpx
+}
+
+.lodimg.data-v-0ef266dd {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx
+}
+
+.lodbox.data-v-0ef266dd {
+  font-size: 24rpx
+}
+
+.showloding.data-v-0ef266dd {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-0ef266dd {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-0ef266dd {
+  width: 260rpx;
+  height: 200rpx;
+  background: rgba(88, 88, 88, .8)
+}
+
+.showloding.data-v-0ef266dd {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color: #fff
+}
+
+.loimg.data-v-0ef266dd {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.loding.data-v-0ef266dd {
+  width: 260rpx;
+  height: 200rpx;
+  background: rgba(88, 88, 88, .8)
+}
